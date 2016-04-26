@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libautomotivedata-cartesian_Matrix3x3TestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/cartesian_Matrix3x3TestSuite.h" >
+    <testcase name="testCreateObject" classname="cartesian_Matrix3x3_TestSuite" line="28" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="cartesian_Matrix3x3_TestSuite" line="63" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="cartesian_Matrix3x3_TestSuite" line="132" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="cartesian_Matrix3x3_TestSuite" line="201" >    </testcase>
+</testsuite>
+</testsuites>

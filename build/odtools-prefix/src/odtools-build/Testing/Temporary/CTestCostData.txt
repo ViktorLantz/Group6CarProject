@@ -1,0 +1,14 @@
+FilterTestSuite.h-TestSuite 1 0.00189996
+PlayerDoubleRealtimeTestSuite.h-TestSuite 1 5.0105
+PlayerHalfRealtimeTestSuite.h-TestSuite 1 10.013
+PlayerAutoRewindTestSuite.h-TestSuite 1 14.0155
+PlayerTestSuite.h-TestSuite 1 8.01135
+PlayerRemoteControlTestSuite.h-TestSuite 1 14.014
+RecIntegrityTestSuite.h-TestSuite 1 0.00293303
+RecorderRemoteControlTestSuite.h-TestSuite 1 11.0147
+RecorderTestSuite.h-TestSuite 1 12.0127
+RedirectorSTDINTestSuite.h-TestSuite 1 13.0156
+RedirectorSTDOUTTestSuite.h-TestSuite 1 12.0162
+SplitTestSuite.h-TestSuite 1 0.329695
+SpyTestSuite.h-TestSuite 1 0.00483704
+---

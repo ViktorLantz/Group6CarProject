@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="lanedetector-LaneDetectorTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:49:55 2016" file="/home/viktor/OpenDaVINCI/automotive/miniature/lanedetector/testsuites/LaneDetectorTestSuite.h" >
+    <testcase name="testLaneDetectorSuccessfullyCreated" classname="LaneDetectorTest" line="101" >    </testcase>
+    <testcase name="testLaneDetectorProcessingMethod" classname="LaneDetectorTest" line="105" >    </testcase>
+    <testcase name="testLaneDetectorProcessingMethodInvalidSharedMemory" classname="LaneDetectorTest" line="133" >    </testcase>
+</testsuite>
+</testsuites>

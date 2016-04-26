@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-VisitableTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:16 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/VisitableTestSuite.h" >
+    <testcase name="testSerializationDeserializationVisitors" classname="VisitableTest" line="241" >
+        <system-out ></system-out>
+    </testcase>
+    <testcase name="testReuseDeserializationVisitors" classname="VisitableTest" line="295" >
+        <system-out ></system-out>
+    </testcase>
+</testsuite>
+</testsuites>

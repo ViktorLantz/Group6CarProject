@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-MessageTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:30 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/MessageTestSuite.h" >
+    <testcase name="testMessage1" classname="FieldTest" line="235" >    </testcase>
+    <testcase name="testMessage2" classname="FieldTest" line="268" >    </testcase>
+    <testcase name="testMessage3" classname="FieldTest" line="313" >    </testcase>
+    <testcase name="testMessageExtractField" classname="FieldTest" line="347" >    </testcase>
+</testsuite>
+</testsuites>

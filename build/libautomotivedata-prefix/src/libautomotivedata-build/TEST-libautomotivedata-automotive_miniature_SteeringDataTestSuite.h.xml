@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libautomotivedata-automotive_miniature_SteeringDataTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/automotive_miniature_SteeringDataTestSuite.h" >
+    <testcase name="testCreateObject" classname="automotive_miniature_SteeringData_TestSuite" line="28" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="automotive_miniature_SteeringData_TestSuite" line="39" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="automotive_miniature_SteeringData_TestSuite" line="60" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="automotive_miniature_SteeringData_TestSuite" line="81" >    </testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+/usr/bin/miniature/boxparker
+/usr/bin/miniature/driver
+/usr/bin/miniature/lanedetector
+/usr/bin/miniature/lanefollower
+/usr/bin/miniature/overtaker
+/usr/bin/miniature/proxy
+/usr/bin/miniature/sidewaysparker
+/usr/bin/miniature/simpledriver
+/usr/bin/miniature/VCR

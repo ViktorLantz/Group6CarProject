@@ -1,0 +1,26 @@
+/*
+ * THIS IS A GENERATED FILE - CHANGES WILL BE OVERWRITTEN.
+ */
+
+#include "opendavinci/generated/odcore/data/LogMessage.h"
+#include "opendavinci/generated/odcore/data/reflection/AbstractField.h"
+#include "opendavinci/generated/odcore/data/dmcp/Constants.h"
+#include "opendavinci/generated/odcore/data/dmcp/TestConstants.h"
+#include "opendavinci/generated/odcore/data/dmcp/ServerInformation.h"
+#include "opendavinci/generated/odcore/data/dmcp/DiscoverMessage.h"
+#include "opendavinci/generated/odcore/data/dmcp/ModuleDescriptor.h"
+#include "opendavinci/generated/odcore/data/dmcp/RuntimeStatistic.h"
+#include "opendavinci/generated/odcore/data/dmcp/ModuleStatistic.h"
+#include "opendavinci/generated/odcore/data/dmcp/ModuleStatistics.h"
+#include "opendavinci/generated/odcore/data/dmcp/ModuleStateMessage.h"
+#include "opendavinci/generated/odcore/data/dmcp/ModuleExitCodeMessage.h"
+#include "opendavinci/generated/odcore/data/dmcp/PulseMessage.h"
+#include "opendavinci/generated/odcore/data/dmcp/PulseAckMessage.h"
+#include "opendavinci/generated/odcore/data/dmcp/PulseAckContainersMessage.h"
+#include "opendavinci/generated/odcore/data/Configuration.h"
+#include "opendavinci/generated/odcore/data/buffer/MemorySegment.h"
+#include "opendavinci/generated/odcore/data/player/PlayerCommand.h"
+#include "opendavinci/generated/odcore/data/recorder/RecorderCommand.h"
+#include "opendavinci/generated/odcore/data/SharedData.h"
+#include "opendavinci/generated/odcore/data/image/SharedImage.h"
+#include "opendavinci/generated/odcore/data/SharedPointCloud.h"

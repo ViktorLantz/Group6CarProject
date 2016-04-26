@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-StringToolboxTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:44:52 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/StringToolboxTestSuite.h" >
+    <testcase name="testTrim" classname="StringToolboxTest" line="34" >    </testcase>
+    <testcase name="testCompareIgnoreCase" classname="StringToolboxTest" line="61" >    </testcase>
+    <testcase name="testSplit" classname="StringToolboxTest" line="84" >    </testcase>
+</testsuite>
+</testsuites>

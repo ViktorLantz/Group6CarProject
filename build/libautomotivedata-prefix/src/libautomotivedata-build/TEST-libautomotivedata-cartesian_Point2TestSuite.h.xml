@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libautomotivedata-cartesian_Point2TestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/cartesian_Point2TestSuite.h" >
+    <testcase name="testCreateObject" classname="cartesian_Point2_TestSuite" line="28" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="cartesian_Point2_TestSuite" line="48" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="cartesian_Point2_TestSuite" line="86" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="cartesian_Point2_TestSuite" line="123" >    </testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+Package: odsimulation-odsimtools
+Version: 3.0.2
+Section: devel
+Priority: optional
+Architecture: amd64
+Depends: opendavinci-lib,opendlv-lib,libautomotivedata
+Installed-Size: 498
+Maintainer: Christian Berger
+Description: odsimtools contains a set of tools for simulations for distributed software systems realized with OpenDaVINCI.
+

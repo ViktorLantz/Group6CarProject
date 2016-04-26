@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libtest18-Test18TestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:52:45 2016" file="/home/viktor/OpenDaVINCI/odDataStructureGenerator/org.opendavinci.datamodel/test/odvd/reference/Test18_withCMake/libtest18/testsuites/Test18TestSuite.h" >
+    <testcase name="testCreateObject" classname="Test18_TestSuite" line="28" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="Test18_TestSuite" line="68" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="Test18_TestSuite" line="146" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="Test18_TestSuite" line="222" >    </testcase>
+</testsuite>
+</testsuites>

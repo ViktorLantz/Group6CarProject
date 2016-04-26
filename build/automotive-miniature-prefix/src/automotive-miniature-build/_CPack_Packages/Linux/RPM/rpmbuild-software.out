@@ -1,0 +1,14 @@
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.Lj4NE4
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.HTwRxY
+Processing files: automotive.miniature-software-3.0.2-1.x86_64
+Provides: automotive.miniature-software = 3.0.2-1 automotive.miniature-software(x86-64) = 3.0.2-1
+Requires(interp): /bin/sh /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(pre): /bin/sh
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Requires: libautomotivedata.so()(64bit) libc.so.6()(64bit) libc.so.6(GLIBC_2.14)(64bit) libc.so.6(GLIBC_2.2.5)(64bit) libc.so.6(GLIBC_2.4)(64bit) libgcc_s.so.1()(64bit) libgcc_s.so.1(GCC_3.0)(64bit) libm.so.6()(64bit) libm.so.6(GLIBC_2.2.5)(64bit) libopencv_core.so.2.4()(64bit) libopencv_highgui.so.2.4()(64bit) libopencv_imgproc.so.2.4()(64bit) libopendavinci.so()(64bit) libopendlv.so()(64bit) libpthread.so.0()(64bit) libpthread.so.0(GLIBC_2.2.5)(64bit) libstdc++.so.6()(64bit) libstdc++.so.6(CXXABI_1.3)(64bit) libstdc++.so.6(GLIBCXX_3.4)(64bit) rtld(GNU_HASH)
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/viktor/OpenDaVINCI/build/automotive-miniature-prefix/src/automotive-miniature-build/_CPack_Packages/Linux/RPM/automotive.miniature_3.0.2_x86_64/software
+Wrote: /home/viktor/OpenDaVINCI/build/automotive-miniature-prefix/src/automotive-miniature-build/_CPack_Packages/Linux/RPM/automotive.miniature_3.0.2_x86_64-software.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.N4TCcN

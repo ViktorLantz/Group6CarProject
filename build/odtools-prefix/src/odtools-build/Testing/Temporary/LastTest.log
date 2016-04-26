@@ -1,0 +1,243 @@
+Start testing: Apr 01 18:00 CEST
+----------------------------------------------------------
+1/13 Testing: FilterTestSuite.h-TestSuite
+1/13 Test: FilterTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odfilter/FilterTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odfilter
+"FilterTestSuite.h-TestSuite" start time: Apr 01 18:00 CEST
+Output:
+----------------------------------------------------------
+Running odfilter-FilterTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FilterTestSuite.h-TestSuite" end time: Apr 01 18:00 CEST
+"FilterTestSuite.h-TestSuite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/13 Testing: PlayerDoubleRealtimeTestSuite.h-TestSuite
+2/13 Test: PlayerDoubleRealtimeTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer/PlayerDoubleRealtimeTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer
+"PlayerDoubleRealtimeTestSuite.h-TestSuite" start time: Apr 01 18:00 CEST
+Output:
+----------------------------------------------------------
+Player: Warning: InvalidArgumentException: No input stream created for the given URL: file://PlayerModuleTest.rec.mem.: No such file or directory at : 0
+testDoubleRealtimeReplayNoRewind - 1: 0 == 0: 1
+testDoubleRealtimeReplayNoRewind - 2: 1000000 == 1000000: 1
+testDoubleRealtimeReplayNoRewind - 3: 2000000 == 2000000: 1
+testDoubleRealtimeReplayNoRewind - 4: 3000000 == 3000000: 1
+testDoubleRealtimeReplayNoRewind - 5: 4000000 == 4000000: 1
+Running odplayer-PlayerDoubleRealtimeTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   5.01 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerDoubleRealtimeTestSuite.h-TestSuite" end time: Apr 01 18:00 CEST
+"PlayerDoubleRealtimeTestSuite.h-TestSuite" time elapsed: 00:00:05
+----------------------------------------------------------
+
+3/13 Testing: PlayerHalfRealtimeTestSuite.h-TestSuite
+3/13 Test: PlayerHalfRealtimeTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer/PlayerHalfRealtimeTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer
+"PlayerHalfRealtimeTestSuite.h-TestSuite" start time: Apr 01 18:00 CEST
+Output:
+----------------------------------------------------------
+Player: Warning: InvalidArgumentException: No input stream created for the given URL: file://PlayerModuleTest.rec.mem.: No such file or directory at : 0
+testHalfRealtimeReplayNoRewind - 1: 0 == 0: 1
+testHalfRealtimeReplayNoRewind - 2: 1000000 == 1000000: 1
+testHalfRealtimeReplayNoRewind - 3: 2000000 == 2000000: 1
+testHalfRealtimeReplayNoRewind - 4: 3000000 == 3000000: 1
+testHalfRealtimeReplayNoRewind - 5: 4000000 == 4000000: 1
+Running odplayer-PlayerHalfRealtimeTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =  10.01 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerHalfRealtimeTestSuite.h-TestSuite" end time: Apr 01 18:01 CEST
+"PlayerHalfRealtimeTestSuite.h-TestSuite" time elapsed: 00:00:10
+----------------------------------------------------------
+
+4/13 Testing: PlayerAutoRewindTestSuite.h-TestSuite
+4/13 Test: PlayerAutoRewindTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer/PlayerAutoRewindTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer
+"PlayerAutoRewindTestSuite.h-TestSuite" start time: Apr 01 18:01 CEST
+Output:
+----------------------------------------------------------
+Player: Warning: InvalidArgumentException: No input stream created for the given URL: file://PlayerModuleTest.rec.mem.: No such file or directory at : 0
+testRealtimeReplayAutoRewind - 1: 1 == 1: 1
+testRealtimeReplayAutoRewind - 2: 1000002 == 1000002: 1
+testRealtimeReplayAutoRewind - 3: 2000003 == 2000003: 1
+testRealtimeReplayAutoRewind - 4: 3000004 == 3000004: 1
+testRealtimeReplayAutoRewind - 5: 4000005 == 4000005: 1
+testRealtimeReplayAutoRewind - 1: 1 == 1: 1
+testRealtimeReplayAutoRewind - 2: 1000002 == 1000002: 1
+testRealtimeReplayAutoRewind - 3: 2000003 == 2000003: 1
+testRealtimeReplayAutoRewind - 4: 3000004 == 3000004: 1
+testRealtimeReplayAutoRewind - 5: 4000005 == 4000005: 1
+Running odplayer-PlayerAutoRewindTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =  14.02 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerAutoRewindTestSuite.h-TestSuite" end time: Apr 01 18:01 CEST
+"PlayerAutoRewindTestSuite.h-TestSuite" time elapsed: 00:00:14
+----------------------------------------------------------
+
+5/13 Testing: PlayerTestSuite.h-TestSuite
+5/13 Test: PlayerTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer/PlayerTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer
+"PlayerTestSuite.h-TestSuite" start time: Apr 01 18:01 CEST
+Output:
+----------------------------------------------------------
+Player: Warning: InvalidArgumentException: No input stream created for the given URL: file://PlayerModuleTest.rec.mem.: No such file or directory at : 0
+testRealtimeReplayNoRewind - 1: 1 == 1: 1
+testRealtimeReplayNoRewind - 2: 1000002 == 1000002: 1
+testRealtimeReplayNoRewind - 3: 2000003 == 2000003: 1
+testRealtimeReplayNoRewind - 4: 3000004 == 3000004: 1
+testRealtimeReplayNoRewind - 5: 4000005 == 4000005: 1
+Running odplayer-PlayerTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   8.01 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerTestSuite.h-TestSuite" end time: Apr 01 18:01 CEST
+"PlayerTestSuite.h-TestSuite" time elapsed: 00:00:08
+----------------------------------------------------------
+
+6/13 Testing: PlayerRemoteControlTestSuite.h-TestSuite
+6/13 Test: PlayerRemoteControlTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer/PlayerRemoteControlTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odplayer
+"PlayerRemoteControlTestSuite.h-TestSuite" start time: Apr 01 18:01 CEST
+Output:
+----------------------------------------------------------
+Player: Warning: InvalidArgumentException: No input stream created for the given URL: file://PlayerModuleTest.rec.mem.: No such file or directory at : 0
+Running odplayer-PlayerRemoteControlTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =  14.01 sec
+----------------------------------------------------------
+Test Passed.
+"PlayerRemoteControlTestSuite.h-TestSuite" end time: Apr 01 18:01 CEST
+"PlayerRemoteControlTestSuite.h-TestSuite" time elapsed: 00:00:14
+----------------------------------------------------------
+
+7/13 Testing: RecIntegrityTestSuite.h-TestSuite
+7/13 Test: RecIntegrityTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odrecintegrity/RecIntegrityTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odrecintegrity
+"RecIntegrityTestSuite.h-TestSuite" start time: Apr 01 18:01 CEST
+Output:
+----------------------------------------------------------
+Running odrecintegrity-RecIntegrityTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RecIntegrityTestSuite.h-TestSuite" end time: Apr 01 18:01 CEST
+"RecIntegrityTestSuite.h-TestSuite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/13 Testing: RecorderRemoteControlTestSuite.h-TestSuite
+8/13 Test: RecorderRemoteControlTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odrecorder/RecorderRemoteControlTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odrecorder
+"RecorderRemoteControlTestSuite.h-TestSuite" start time: Apr 01 18:01 CEST
+Output:
+----------------------------------------------------------
+Running odrecorder-RecorderRemoteControlTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =  11.01 sec
+----------------------------------------------------------
+Test Passed.
+"RecorderRemoteControlTestSuite.h-TestSuite" end time: Apr 01 18:01 CEST
+"RecorderRemoteControlTestSuite.h-TestSuite" time elapsed: 00:00:11
+----------------------------------------------------------
+
+9/13 Testing: RecorderTestSuite.h-TestSuite
+9/13 Test: RecorderTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odrecorder/RecorderTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odrecorder
+"RecorderTestSuite.h-TestSuite" start time: Apr 01 18:01 CEST
+Output:
+----------------------------------------------------------
+Running odrecorder-RecorderTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =  12.01 sec
+----------------------------------------------------------
+Test Passed.
+"RecorderTestSuite.h-TestSuite" end time: Apr 01 18:02 CEST
+"RecorderTestSuite.h-TestSuite" time elapsed: 00:00:12
+----------------------------------------------------------
+
+10/13 Testing: RedirectorSTDINTestSuite.h-TestSuite
+10/13 Test: RedirectorSTDINTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odredirector/RedirectorSTDINTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odredirector
+"RedirectorSTDINTestSuite.h-TestSuite" start time: Apr 01 18:02 CEST
+Output:
+----------------------------------------------------------
+Running odredirector-RedirectorSTDINTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =  13.02 sec
+----------------------------------------------------------
+Test Passed.
+"RedirectorSTDINTestSuite.h-TestSuite" end time: Apr 01 18:02 CEST
+"RedirectorSTDINTestSuite.h-TestSuite" time elapsed: 00:00:13
+----------------------------------------------------------
+
+11/13 Testing: RedirectorSTDOUTTestSuite.h-TestSuite
+11/13 Test: RedirectorSTDOUTTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odredirector/RedirectorSTDOUTTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odredirector
+"RedirectorSTDOUTTestSuite.h-TestSuite" start time: Apr 01 18:02 CEST
+Output:
+----------------------------------------------------------
+Running odredirector-RedirectorSTDOUTTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =  12.02 sec
+----------------------------------------------------------
+Test Passed.
+"RedirectorSTDOUTTestSuite.h-TestSuite" end time: Apr 01 18:02 CEST
+"RedirectorSTDOUTTestSuite.h-TestSuite" time elapsed: 00:00:12
+----------------------------------------------------------
+
+12/13 Testing: SplitTestSuite.h-TestSuite
+12/13 Test: SplitTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odsplit/SplitTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odsplit
+"SplitTestSuite.h-TestSuite" start time: Apr 01 18:02 CEST
+Output:
+----------------------------------------------------------
+[odsplit] Specified memorySegmentSize is too small, using 307200 bytes.
+[odsplit] Specified memorySegmentSize is too small, using 307200 bytes.
+Running odsplit-SplitTestSuite.h tests (2 tests)..OK!
+<end of output>
+Test time =   0.33 sec
+----------------------------------------------------------
+Test Passed.
+"SplitTestSuite.h-TestSuite" end time: Apr 01 18:02 CEST
+"SplitTestSuite.h-TestSuite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/13 Testing: SpyTestSuite.h-TestSuite
+13/13 Test: SpyTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odspy/SpyTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odtools-prefix/src/odtools-build/odspy
+"SpyTestSuite.h-TestSuite" start time: Apr 01 18:02 CEST
+Output:
+----------------------------------------------------------
+Running odspy-SpyTestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SpyTestSuite.h-TestSuite" end time: Apr 01 18:02 CEST
+"SpyTestSuite.h-TestSuite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 01 18:02 CEST

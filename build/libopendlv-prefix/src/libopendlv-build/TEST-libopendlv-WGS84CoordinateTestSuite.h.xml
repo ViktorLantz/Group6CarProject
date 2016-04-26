@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendlv-WGS84CoordinateTestSuite.h" tests="6" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:49:11 2016" file="/home/viktor/OpenDaVINCI/libopendlv/testsuites/WGS84CoordinateTestSuite.h" >
+    <testcase name="testWGS84Coordinate" classname="WGS84CoordinateTest" line="42" >    </testcase>
+    <testcase name="testWGS84CoordinateTransformationSelf" classname="WGS84CoordinateTest" line="65" >    </testcase>
+    <testcase name="testWGS84CoordinateTransformation" classname="WGS84CoordinateTest" line="76" >    </testcase>
+    <testcase name="testInverseProjection" classname="WGS84CoordinateTest" line="221" >    </testcase>
+    <testcase name="testInverseProjectionWithAccuracy" classname="WGS84CoordinateTest" line="366" >    </testcase>
+    <testcase name="testGPRMC" classname="WGS84CoordinateTest" line="511" >    </testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libautomotivedata-fxe_NoiseTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/fxe_NoiseTestSuite.h" >
+    <testcase name="testCreateObject" classname="fxe_Noise_TestSuite" line="29" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="fxe_Noise_TestSuite" line="40" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="fxe_Noise_TestSuite" line="62" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="fxe_Noise_TestSuite" line="85" >    </testcase>
+</testsuite>
+</testsuites>

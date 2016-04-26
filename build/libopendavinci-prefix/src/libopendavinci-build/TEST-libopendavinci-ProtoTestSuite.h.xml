@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-ProtoTestSuite.h" tests="6" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:49 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/ProtoTestSuite.h" >
+    <testcase name="testSerializationDeserialization" classname="ProtoTest" line="256" >    </testcase>
+    <testcase name="testSerializationDeserializationInheritance" classname="ProtoTest" line="282" >    </testcase>
+    <testcase name="testSerializationDeserializationFloatingPoint" classname="ProtoTest" line="313" >    </testcase>
+    <testcase name="testSerializationDeserializationFloatingPointNoHeader" classname="ProtoTest" line="342" >    </testcase>
+    <testcase name="testSerializationDeserializationNullValues" classname="ProtoTest" line="371" >    </testcase>
+    <testcase name="testProtoSerialisation" classname="ProtoTest" line="421" >    </testcase>
+</testsuite>
+</testsuites>

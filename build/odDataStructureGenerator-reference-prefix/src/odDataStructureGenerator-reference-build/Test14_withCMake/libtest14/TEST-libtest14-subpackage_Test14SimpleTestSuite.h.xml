@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libtest14-subpackage_Test14SimpleTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:52:45 2016" file="/home/viktor/OpenDaVINCI/odDataStructureGenerator/org.opendavinci.datamodel/test/odvd/reference/Test14_withCMake/libtest14/testsuites/subpackage_Test14SimpleTestSuite.h" >
+    <testcase name="testCreateObject" classname="subpackage_Test14Simple_TestSuite" line="28" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="subpackage_Test14Simple_TestSuite" line="36" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="subpackage_Test14Simple_TestSuite" line="51" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="subpackage_Test14Simple_TestSuite" line="66" >    </testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+Package: opendlv-lib
+Version: 3.0.2
+Section: devel
+Priority: optional
+Architecture: amd64
+Depends: opendavinci-lib,libautomotivedata,libopencv-dev,libopencv-core-dev,libopencv-highgui-dev,libopencv-imgproc-dev,freeglut3,freeglut3-dev,libboost-dev
+Installed-Size: 47486
+Maintainer: Christian Berger
+Description: libopendlv is a portable toolkit for automotive applications written in C++ to support the simulation-driven development of distributed software systems.
+

@@ -1,0 +1,4 @@
+/usr/bin/odDataStructureGenerator-latest.jar
+/usr/share/cmake-2.8/Modules/FindodDataStructureGenerator.cmake
+/usr/share/cmake-3.0/Modules/FindodDataStructureGenerator.cmake
+/usr/share/cmake-2.8/Modules/FindodDataStructureGenerator.cmake

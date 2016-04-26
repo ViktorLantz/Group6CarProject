@@ -1,0 +1,13 @@
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.7jO8zw
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.Iq4cyN
+Processing files: libautomotivedata-1.0.0-1.x86_64
+Provides: libautomotivedata = 1.0.0-1 libautomotivedata(x86-64) = 1.0.0-1 libautomotivedata.so()(64bit)
+Requires(interp): /bin/sh /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(pre): /bin/sh
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/viktor/OpenDaVINCI/build/libautomotivedata-prefix/src/libautomotivedata-build/_CPack_Packages/Linux/RPM/libautomotivedata_1.0.0_x86_64
+Wrote: /home/viktor/OpenDaVINCI/build/libautomotivedata-prefix/src/libautomotivedata-build/_CPack_Packages/Linux/RPM/libautomotivedata_1.0.0_x86_64.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.HAACro

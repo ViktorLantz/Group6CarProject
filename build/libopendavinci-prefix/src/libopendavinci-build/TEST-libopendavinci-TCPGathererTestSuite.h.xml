@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-TCPGathererTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:20 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/TCPGathererTestSuite.h" >
+    <testcase name="testNoGathering" classname="TCPGathererTestSuite" line="61" >    </testcase>
+    <testcase name="testGathering" classname="TCPGathererTestSuite" line="80" >    </testcase>
+    <testcase name="testMixedGathering" classname="TCPGathererTestSuite" line="105" >    </testcase>
+</testsuite>
+</testsuites>

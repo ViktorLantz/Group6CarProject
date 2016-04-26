@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="odsupercomponent-SupercomponentClientModuleTest3TestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:55:43 2016" file="/home/viktor/OpenDaVINCI/odsupercomponent/testsuites/SupercomponentClientModuleTest3TestSuite.h" >
+    <testcase name="testServerSpecificDefaultConfigurationFile" classname="SupercomponentClientModuleTest" line="147" >    </testcase>
+</testsuite>
+</testsuites>

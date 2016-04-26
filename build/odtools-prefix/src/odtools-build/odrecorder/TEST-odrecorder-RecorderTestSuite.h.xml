@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="odrecorder-RecorderTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 18:02:05 2016" file="/home/viktor/OpenDaVINCI/odtools/odrecorder/testsuites/RecorderTestSuite.h" >
+    <testcase name="testRecorder" classname="RecorderTest" line="98" >    </testcase>
+</testsuite>
+</testsuites>

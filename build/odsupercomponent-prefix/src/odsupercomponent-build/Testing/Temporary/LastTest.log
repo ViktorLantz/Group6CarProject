@@ -1,0 +1,1357 @@
+Start testing: Apr 01 17:55 CEST
+----------------------------------------------------------
+1/17 Testing: ManagedLevelTest3TestSuite.h-TestSuite
+1/17 Test: ManagedLevelTest3TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/ManagedLevelTest3TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"ManagedLevelTest3TestSuite.h-TestSuite" start time: Apr 01 17:55 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-ManagedLevelTest3TestSuite.h tests (1 test)Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Sleep for 96485.7 ms.
+Latest container from data type 33, content: 0, sum = 0
+Sleep for 988657 ms.
+Latest container from data type 33, content: 1, sum = 1
+Diff: 0
+Latest container from data type 33, content: 1, sum = 2
+Diff: 1
+Latest container from data type 33, content: 1, sum = 3
+Diff: 3
+Latest container from data type 33, content: 1, sum = 4
+Diff: 6
+Latest container from data type 33, content: 1, sum = 5
+Diff: 10
+Latest container from data type 33, content: 1, sum = 6
+Diff: 15
+Latest container from data type 33, content: 1, sum = 7
+Diff: 21
+Latest container from data type 33, content: 1, sum = 8
+Diff: 28
+Latest container from data type 33, content: 1, sum = 9
+Diff: 36
+Sleep for 272728 ms.
+done.
+.OK!
+<end of output>
+Test time =  17.11 sec
+----------------------------------------------------------
+Test Passed.
+"ManagedLevelTest3TestSuite.h-TestSuite" end time: Apr 01 17:55 CEST
+"ManagedLevelTest3TestSuite.h-TestSuite" time elapsed: 00:00:17
+----------------------------------------------------------
+
+2/17 Testing: ManagedLevelTest1TestSuite.h-TestSuite
+2/17 Test: ManagedLevelTest1TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/ManagedLevelTest1TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"ManagedLevelTest1TestSuite.h-TestSuite" start time: Apr 01 17:55 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-ManagedLevelTest1TestSuite.h tests (1 test)done.
+.OK!
+<end of output>
+Test time =   6.02 sec
+----------------------------------------------------------
+Test Passed.
+"ManagedLevelTest1TestSuite.h-TestSuite" end time: Apr 01 17:55 CEST
+"ManagedLevelTest1TestSuite.h-TestSuite" time elapsed: 00:00:06
+----------------------------------------------------------
+
+3/17 Testing: SupercomponentClientModuleTest3TestSuite.h-TestSuite
+3/17 Test: SupercomponentClientModuleTest3TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest3TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest3TestSuite.h-TestSuite" start time: Apr 01 17:55 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-SupercomponentClientModuleTest3TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   1.01 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest3TestSuite.h-TestSuite" end time: Apr 01 17:55 CEST
+"SupercomponentClientModuleTest3TestSuite.h-TestSuite" time elapsed: 00:00:01
+----------------------------------------------------------
+
+4/17 Testing: SupercomponentClientModuleTest6TestSuite.h-TestSuite
+4/17 Test: SupercomponentClientModuleTest6TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest6TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest6TestSuite.h-TestSuite" start time: Apr 01 17:55 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-SupercomponentClientModuleTest6TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   2.01 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest6TestSuite.h-TestSuite" end time: Apr 01 17:55 CEST
+"SupercomponentClientModuleTest6TestSuite.h-TestSuite" time elapsed: 00:00:02
+----------------------------------------------------------
+
+5/17 Testing: SupercomponentClientModuleTest7TestSuite.h-TestSuite
+5/17 Test: SupercomponentClientModuleTest7TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest7TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest7TestSuite.h-TestSuite" start time: Apr 01 17:55 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-SupercomponentClientModuleTest7TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   2.01 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest7TestSuite.h-TestSuite" end time: Apr 01 17:55 CEST
+"SupercomponentClientModuleTest7TestSuite.h-TestSuite" time elapsed: 00:00:02
+----------------------------------------------------------
+
+6/17 Testing: SupercomponentClientModuleTest1TestSuite.h-TestSuite
+6/17 Test: SupercomponentClientModuleTest1TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest1TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest1TestSuite.h-TestSuite" start time: Apr 01 17:55 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-SupercomponentClientModuleTest1TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   1.00 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest1TestSuite.h-TestSuite" end time: Apr 01 17:55 CEST
+"SupercomponentClientModuleTest1TestSuite.h-TestSuite" time elapsed: 00:00:01
+----------------------------------------------------------
+
+7/17 Testing: LoggingLevelDebugTestSuite.h-TestSuite
+7/17 Test: LoggingLevelDebugTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/LoggingLevelDebugTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"LoggingLevelDebugTestSuite.h-TestSuite" start time: Apr 01 17:55 CEST
+Output:
+----------------------------------------------------------
+Starting odsupercomponent...
+odsupercomponent started.
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 2 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 3 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 4 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+Running odsupercomponent-LoggingLevelDebugTestSuite.h tests (1 test)done.
+.OK!
+<end of output>
+Test time =  15.53 sec
+----------------------------------------------------------
+Test Passed.
+"LoggingLevelDebugTestSuite.h-TestSuite" end time: Apr 01 17:56 CEST
+"LoggingLevelDebugTestSuite.h-TestSuite" time elapsed: 00:00:15
+----------------------------------------------------------
+
+8/17 Testing: LoggingLevelWarnTestSuite.h-TestSuite
+8/17 Test: LoggingLevelWarnTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/LoggingLevelWarnTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"LoggingLevelWarnTestSuite.h-TestSuite" start time: Apr 01 17:56 CEST
+Output:
+----------------------------------------------------------
+Starting odsupercomponent...
+odsupercomponent started.
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 2 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 3 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 4 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+Running odsupercomponent-LoggingLevelWarnTestSuite.h tests (1 test)done.
+.OK!
+<end of output>
+Test time =  15.53 sec
+----------------------------------------------------------
+Test Passed.
+"LoggingLevelWarnTestSuite.h-TestSuite" end time: Apr 01 17:56 CEST
+"LoggingLevelWarnTestSuite.h-TestSuite" time elapsed: 00:00:15
+----------------------------------------------------------
+
+9/17 Testing: ManagedLevelTest2TestSuite.h-TestSuite
+9/17 Test: ManagedLevelTest2TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/ManagedLevelTest2TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"ManagedLevelTest2TestSuite.h-TestSuite" start time: Apr 01 17:56 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-ManagedLevelTest2TestSuite.h tests (1 test)done.
+.OK!
+<end of output>
+Test time =  14.01 sec
+----------------------------------------------------------
+Test Passed.
+"ManagedLevelTest2TestSuite.h-TestSuite" end time: Apr 01 17:56 CEST
+"ManagedLevelTest2TestSuite.h-TestSuite" time elapsed: 00:00:14
+----------------------------------------------------------
+
+10/17 Testing: ManagedLevelTest4TestSuite.h-TestSuite
+10/17 Test: ManagedLevelTest4TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/ManagedLevelTest4TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"ManagedLevelTest4TestSuite.h-TestSuite" start time: Apr 01 17:56 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-ManagedLevelTest4TestSuite.h tests (1 test)Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Latest container from data type 1, content: 0, sum = 0
+Sleep for 96485.7 ms.
+Latest container from data type 33, content: 0, sum = 0
+Sleep for 988657 ms.
+Latest container from data type 33, content: 1, sum = 1
+Diff: 0
+Sleep for 272728 ms.
+Latest container from data type 33, content: 2, sum = 3
+Diff: 0
+Sleep for 733295 ms.
+Latest container from data type 33, content: 3, sum = 6
+Diff: 0
+Sleep for 988691 ms.
+Latest container from data type 33, content: 4, sum = 10
+Diff: 0
+Sleep for 309197 ms.
+Latest container from data type 33, content: 5, sum = 15
+Diff: 0
+Sleep for 710015 ms.
+Latest container from data type 33, content: 6, sum = 21
+Diff: 0
+Sleep for 65264.6 ms.
+Latest container from data type 33, content: 7, sum = 28
+Diff: 0
+Sleep for 890470 ms.
+Latest container from data type 33, content: 8, sum = 36
+Diff: 0
+Sleep for 560425 ms.
+Latest container from data type 33, content: 9, sum = 45
+Diff: 0
+Sleep for 222215 ms.
+Latest container from data type 33, content: 10, sum = 55
+Diff: 0
+Sleep for 944901 ms.
+Latest container from data type 33, content: 11, sum = 66
+Diff: 0
+Sleep for 114949 ms.
+Latest container from data type 33, content: 12, sum = 78
+Diff: 0
+Sleep for 784026 ms.
+Latest container from data type 33, content: 13, sum = 91
+Diff: 0
+Sleep for 293582 ms.
+Latest container from data type 33, content: 14, sum = 105
+Diff: 0
+Sleep for 549163 ms.
+Latest container from data type 33, content: 15, sum = 120
+Diff: 0
+Sleep for 905770 ms.
+Latest container from data type 33, content: 16, sum = 136
+Diff: 0
+Sleep for 335169 ms.
+Latest container from data type 33, content: 17, sum = 153
+Diff: 0
+Sleep for 110114 ms.
+Latest container from data type 33, content: 18, sum = 171
+Diff: 0
+Sleep for 377122 ms.
+Latest container from data type 33, content: 19, sum = 190
+Diff: 0
+Sleep for 210821 ms.
+Latest container from data type 33, content: 20, sum = 210
+Diff: 0
+Sleep for 833710 ms.
+Latest container from data type 33, content: 21, sum = 231
+Diff: 0
+Sleep for 350757 ms.
+Latest container from data type 33, content: 22, sum = 253
+Diff: 0
+Sleep for 388445 ms.
+Latest container from data type 33, content: 23, sum = 276
+Diff: 0
+Sleep for 504521 ms.
+Latest container from data type 33, content: 24, sum = 300
+Diff: 0
+Sleep for 1.04045e+06 ms.
+Latest container from data type 33, content: 25, sum = 325
+Diff: 0
+Sleep for 1.06717e+06 ms.
+Latest container from data type 33, content: 26, sum = 351
+Diff: 0
+Sleep for 143410 ms.
+Latest container from data type 33, content: 27, sum = 378
+Diff: 0
+Sleep for 717796 ms.
+Latest container from data type 33, content: 28, sum = 406
+Diff: 0
+Sleep for 500916 ms.
+Latest container from data type 33, content: 29, sum = 435
+Diff: 0
+Sleep for 781636 ms.
+Latest container from data type 33, content: 30, sum = 465
+Diff: 0
+Sleep for 814281 ms.
+Latest container from data type 33, content: 31, sum = 496
+Diff: 0
+Sleep for 389573 ms.
+Latest container from data type 33, content: 32, sum = 528
+Diff: 0
+Sleep for 1.05436e+06 ms.
+Latest container from data type 33, content: 33, sum = 561
+Diff: 0
+Sleep for 447576 ms.
+Latest container from data type 33, content: 34, sum = 595
+Diff: 0
+Sleep for 278264 ms.
+Latest container from data type 33, content: 35, sum = 630
+Diff: 0
+Sleep for 263561 ms.
+Latest container from data type 33, content: 36, sum = 666
+Diff: 0
+Sleep for 57590.9 ms.
+Latest container from data type 33, content: 37, sum = 703
+Diff: 0
+Sleep for 343529 ms.
+Latest container from data type 33, content: 38, sum = 741
+Diff: 0
+Sleep for 54031.5 ms.
+Latest container from data type 33, content: 39, sum = 780
+Diff: 0
+Sleep for 618016 ms.
+Latest container from data type 33, content: 40, sum = 820
+Diff: 0
+Sleep for 565744 ms.
+Latest container from data type 33, content: 41, sum = 861
+Diff: 0
+Sleep for 998932 ms.
+Latest container from data type 33, content: 42, sum = 903
+Diff: 0
+Sleep for 732965 ms.
+Latest container from data type 33, content: 43, sum = 946
+Diff: 0
+Sleep for 249770 ms.
+Latest container from data type 33, content: 44, sum = 990
+Diff: 0
+Sleep for 192514 ms.
+Latest container from data type 33, content: 45, sum = 1035
+Diff: 0
+Sleep for 182129 ms.
+Latest container from data type 33, content: 46, sum = 1081
+Diff: 0
+Sleep for 55540 ms.
+Latest container from data type 33, content: 47, sum = 1128
+Diff: 0
+Sleep for 527683 ms.
+Latest container from data type 33, content: 48, sum = 1176
+Diff: 0
+Sleep for 292242 ms.
+Latest container from data type 33, content: 49, sum = 1225
+Diff: 0
+Sleep for 432662 ms.
+Latest container from data type 33, content: 50, sum = 1275
+Diff: 0
+Sleep for 738504 ms.
+Latest container from data type 33, content: 51, sum = 1326
+Diff: 0
+Sleep for 25952 ms.
+Latest container from data type 33, content: 52, sum = 1378
+Diff: 0
+Sleep for 783419 ms.
+Latest container from data type 33, content: 53, sum = 1431
+Diff: 0
+Sleep for 26949.2 ms.
+Latest container from data type 33, content: 54, sum = 1485
+Diff: 0
+Sleep for 530473 ms.
+Latest container from data type 33, content: 55, sum = 1540
+Diff: 0
+Sleep for 723873 ms.
+Latest container from data type 33, content: 56, sum = 1596
+Diff: 0
+Sleep for 1.09412e+06 ms.
+Latest container from data type 33, content: 57, sum = 1653
+Diff: 0
+Sleep for 673883 ms.
+Latest container from data type 33, content: 58, sum = 1711
+Diff: 0
+Sleep for 341668 ms.
+Latest container from data type 33, content: 59, sum = 1770
+Diff: 0
+Sleep for 495034 ms.
+Latest container from data type 33, content: 60, sum = 1830
+Diff: 0
+Sleep for 355520 ms.
+Latest container from data type 33, content: 61, sum = 1891
+Diff: 0
+Sleep for 55949.5 ms.
+Latest container from data type 33, content: 62, sum = 1953
+Diff: 0
+Sleep for 884606 ms.
+Latest container from data type 33, content: 63, sum = 2016
+Diff: 0
+Sleep for 309884 ms.
+Latest container from data type 33, content: 64, sum = 2080
+Diff: 0
+Sleep for 503525 ms.
+Latest container from data type 33, content: 65, sum = 2145
+Diff: 0
+Sleep for 62870.4 ms.
+Latest container from data type 33, content: 66, sum = 2211
+Diff: 0
+Sleep for 573445 ms.
+Latest container from data type 33, content: 67, sum = 2278
+Diff: 0
+Sleep for 561116 ms.
+Latest container from data type 33, content: 68, sum = 2346
+Diff: 0
+Sleep for 406399 ms.
+Latest container from data type 33, content: 69, sum = 2415
+Diff: 0
+Sleep for 627476 ms.
+Latest container from data type 33, content: 70, sum = 2485
+Diff: 0
+Sleep for 79132.3 ms.
+Latest container from data type 33, content: 71, sum = 2556
+Diff: 0
+Sleep for 972142 ms.
+Latest container from data type 33, content: 72, sum = 2628
+Diff: 0
+Sleep for 526408 ms.
+Latest container from data type 33, content: 73, sum = 2701
+Diff: 0
+Sleep for 812097 ms.
+Latest container from data type 33, content: 74, sum = 2775
+Diff: 0
+Sleep for 121912 ms.
+Latest container from data type 33, content: 75, sum = 2850
+Diff: 0
+Sleep for 718922 ms.
+Latest container from data type 33, content: 76, sum = 2926
+Diff: 0
+Sleep for 994226 ms.
+Latest container from data type 33, content: 77, sum = 3003
+Diff: 0
+Sleep for 177452 ms.
+Latest container from data type 33, content: 78, sum = 3081
+Diff: 0
+Sleep for 146605 ms.
+Latest container from data type 33, content: 79, sum = 3160
+Diff: 0
+Sleep for 186468 ms.
+Latest container from data type 33, content: 80, sum = 3240
+Diff: 0
+Sleep for 610114 ms.
+Latest container from data type 33, content: 81, sum = 3321
+Diff: 0
+Sleep for 885109 ms.
+Latest container from data type 33, content: 82, sum = 3403
+Diff: 0
+Sleep for 212420 ms.
+Latest container from data type 33, content: 83, sum = 3486
+Diff: 0
+Sleep for 293533 ms.
+Latest container from data type 33, content: 84, sum = 3570
+Diff: 0
+Sleep for 912059 ms.
+Latest container from data type 33, content: 85, sum = 3655
+Diff: 0
+Sleep for 742894 ms.
+Latest container from data type 33, content: 86, sum = 3741
+Diff: 0
+Sleep for 1.01741e+06 ms.
+Latest container from data type 33, content: 87, sum = 3828
+Diff: 0
+Sleep for 906177 ms.
+Latest container from data type 33, content: 88, sum = 3916
+Diff: 0
+Sleep for 316777 ms.
+Latest container from data type 33, content: 89, sum = 4005
+Diff: 0
+Sleep for 259073 ms.
+Latest container from data type 33, content: 90, sum = 4095
+Diff: 0
+Sleep for 301211 ms.
+Latest container from data type 33, content: 91, sum = 4186
+Diff: 0
+Sleep for 672297 ms.
+Latest container from data type 33, content: 92, sum = 4278
+Diff: 0
+Sleep for 315023 ms.
+Latest container from data type 33, content: 93, sum = 4371
+Diff: 0
+Sleep for 85817.3 ms.
+Latest container from data type 33, content: 94, sum = 4465
+Diff: 0
+Sleep for 982180 ms.
+Latest container from data type 33, content: 95, sum = 4560
+Diff: 0
+Sleep for 818548 ms.
+Latest container from data type 33, content: 96, sum = 4656
+Diff: 0
+Sleep for 148688 ms.
+Latest container from data type 33, content: 97, sum = 4753
+Diff: 0
+Sleep for 455625 ms.
+Latest container from data type 33, content: 98, sum = 4851
+Diff: 0
+Sleep for 279665 ms.
+Latest container from data type 33, content: 99, sum = 4950
+Diff: 0
+Sleep for 555087 ms.
+Latest container from data type 33, content: 100, sum = 5050
+Diff: 0
+Sleep for 1.0831e+06 ms.
+Latest container from data type 33, content: 101, sum = 5151
+Diff: 0
+Sleep for 358797 ms.
+Latest container from data type 33, content: 102, sum = 5253
+Diff: 0
+Sleep for 427229 ms.
+Latest container from data type 33, content: 103, sum = 5356
+Diff: 0
+Sleep for 509509 ms.
+Latest container from data type 33, content: 104, sum = 5460
+Diff: 0
+Sleep for 70894.4 ms.
+Latest container from data type 33, content: 105, sum = 5565
+Diff: 0
+Sleep for 549141 ms.
+Latest container from data type 33, content: 106, sum = 5671
+Diff: 0
+Sleep for 128431 ms.
+Latest container from data type 33, content: 107, sum = 5778
+Diff: 0
+Sleep for 1.06512e+06 ms.
+Latest container from data type 33, content: 108, sum = 5886
+Diff: 0
+Sleep for 726593 ms.
+Latest container from data type 33, content: 109, sum = 5995
+Diff: 0
+Sleep for 275036 ms.
+Latest container from data type 33, content: 110, sum = 6105
+Diff: 0
+Sleep for 151589 ms.
+Latest container from data type 33, content: 111, sum = 6216
+Diff: 0
+Sleep for 236707 ms.
+Latest container from data type 33, content: 112, sum = 6328
+Diff: 0
+Sleep for 60145.6 ms.
+Latest container from data type 33, content: 113, sum = 6441
+Diff: 0
+Sleep for 364009 ms.
+Latest container from data type 33, content: 114, sum = 6555
+Diff: 0
+Sleep for 530240 ms.
+Latest container from data type 33, content: 115, sum = 6670
+Diff: 0
+Sleep for 972204 ms.
+Latest container from data type 33, content: 116, sum = 6786
+Diff: 0
+Sleep for 6902.65 ms.
+Latest container from data type 33, content: 117, sum = 6903
+Diff: 0
+Sleep for 447645 ms.
+Latest container from data type 33, content: 118, sum = 7021
+Diff: 0
+Sleep for 778381 ms.
+Latest container from data type 33, content: 119, sum = 7140
+Diff: 0
+Sleep for 323680 ms.
+Latest container from data type 33, content: 120, sum = 7260
+Diff: 0
+Sleep for 706719 ms.
+Latest container from data type 33, content: 121, sum = 7381
+Diff: 0
+Sleep for 1.07959e+06 ms.
+Latest container from data type 33, content: 122, sum = 7503
+Diff: 0
+Sleep for 995977 ms.
+Latest container from data type 33, content: 123, sum = 7626
+Diff: 0
+Sleep for 1.02174e+06 ms.
+Latest container from data type 33, content: 124, sum = 7750
+Diff: 0
+Sleep for 65409 ms.
+Latest container from data type 33, content: 125, sum = 7875
+Diff: 0
+Sleep for 878157 ms.
+Latest container from data type 33, content: 126, sum = 8001
+Diff: 0
+Sleep for 740290 ms.
+Latest container from data type 33, content: 127, sum = 8128
+Diff: 0
+Sleep for 214097 ms.
+Latest container from data type 33, content: 128, sum = 8256
+Diff: 0
+Sleep for 233782 ms.
+Latest container from data type 33, content: 129, sum = 8385
+Diff: 0
+Sleep for 1.01995e+06 ms.
+Latest container from data type 33, content: 130, sum = 8515
+Diff: 0
+Sleep for 769183 ms.
+Latest container from data type 33, content: 131, sum = 8646
+Diff: 0
+Sleep for 216883 ms.
+Latest container from data type 33, content: 132, sum = 8778
+Diff: 0
+Sleep for 278752 ms.
+Latest container from data type 33, content: 133, sum = 8911
+Diff: 0
+Sleep for 96412.3 ms.
+Latest container from data type 33, content: 134, sum = 9045
+Diff: 0
+Sleep for 726392 ms.
+Latest container from data type 33, content: 135, sum = 9180
+Diff: 0
+Sleep for 349646 ms.
+Latest container from data type 33, content: 136, sum = 9316
+Diff: 0
+Sleep for 645554 ms.
+Latest container from data type 33, content: 137, sum = 9453
+Diff: 0
+Sleep for 854823 ms.
+Latest container from data type 33, content: 138, sum = 9591
+Diff: 0
+Sleep for 314767 ms.
+Latest container from data type 33, content: 139, sum = 9730
+Diff: 0
+Sleep for 272147 ms.
+Latest container from data type 33, content: 140, sum = 9870
+Diff: 0
+Sleep for 29859.7 ms.
+Latest container from data type 33, content: 141, sum = 10011
+Diff: 0
+Sleep for 466355 ms.
+Latest container from data type 33, content: 142, sum = 10153
+Diff: 0
+Sleep for 508854 ms.
+Latest container from data type 33, content: 143, sum = 10296
+Diff: 0
+Sleep for 90005.3 ms.
+Latest container from data type 33, content: 144, sum = 10440
+Diff: 0
+Sleep for 830364 ms.
+Latest container from data type 33, content: 145, sum = 10585
+Diff: 0
+Sleep for 1.03909e+06 ms.
+Latest container from data type 33, content: 146, sum = 10731
+Diff: 0
+Sleep for 1.06221e+06 ms.
+Latest container from data type 33, content: 147, sum = 10878
+Diff: 0
+Sleep for 837267 ms.
+Latest container from data type 33, content: 148, sum = 11026
+Diff: 0
+Sleep for 386739 ms.
+Latest container from data type 33, content: 149, sum = 11175
+Diff: 0
+Sleep for 740590 ms.
+Latest container from data type 33, content: 150, sum = 11325
+Diff: 0
+Sleep for 60946.5 ms.
+Latest container from data type 33, content: 151, sum = 11476
+Diff: 0
+Sleep for 1.09346e+06 ms.
+Latest container from data type 33, content: 152, sum = 11628
+Diff: 0
+Sleep for 720182 ms.
+Latest container from data type 33, content: 153, sum = 11781
+Diff: 0
+Sleep for 1.05692e+06 ms.
+Latest container from data type 33, content: 154, sum = 11935
+Diff: 0
+Sleep for 1.0152e+06 ms.
+Latest container from data type 33, content: 155, sum = 12090
+Diff: 0
+Sleep for 785591 ms.
+Latest container from data type 33, content: 156, sum = 12246
+Diff: 0
+Sleep for 835080 ms.
+Latest container from data type 33, content: 157, sum = 12403
+Diff: 0
+Sleep for 655489 ms.
+Latest container from data type 33, content: 158, sum = 12561
+Diff: 0
+Sleep for 999688 ms.
+Latest container from data type 33, content: 159, sum = 12720
+Diff: 0
+Sleep for 1.06886e+06 ms.
+Latest container from data type 33, content: 160, sum = 12880
+Diff: 0
+Sleep for 575444 ms.
+Latest container from data type 33, content: 161, sum = 13041
+Diff: 0
+Sleep for 668871 ms.
+Latest container from data type 33, content: 162, sum = 13203
+Diff: 0
+Sleep for 185745 ms.
+Latest container from data type 33, content: 163, sum = 13366
+Diff: 0
+Sleep for 854196 ms.
+Latest container from data type 33, content: 164, sum = 13530
+Diff: 0
+Sleep for 765284 ms.
+Latest container from data type 33, content: 165, sum = 13695
+Diff: 0
+Sleep for 912137 ms.
+Latest container from data type 33, content: 166, sum = 13861
+Diff: 0
+Sleep for 103842 ms.
+Latest container from data type 33, content: 167, sum = 14028
+Diff: 0
+Sleep for 310837 ms.
+Latest container from data type 33, content: 168, sum = 14196
+Diff: 0
+Sleep for 666961 ms.
+Latest container from data type 33, content: 169, sum = 14365
+Diff: 0
+Sleep for 418609 ms.
+Latest container from data type 33, content: 170, sum = 14535
+Diff: 0
+Sleep for 582984 ms.
+Latest container from data type 33, content: 171, sum = 14706
+Diff: 0
+Sleep for 696820 ms.
+Latest container from data type 33, content: 172, sum = 14878
+Diff: 0
+Sleep for 884964 ms.
+Latest container from data type 33, content: 173, sum = 15051
+Diff: 0
+Sleep for 1.09184e+06 ms.
+Latest container from data type 33, content: 174, sum = 15225
+Diff: 0
+Sleep for 786826 ms.
+Latest container from data type 33, content: 175, sum = 15400
+Diff: 0
+Sleep for 615328 ms.
+Latest container from data type 33, content: 176, sum = 15576
+Diff: 0
+Sleep for 1.03093e+06 ms.
+Latest container from data type 33, content: 177, sum = 15753
+Diff: 0
+Sleep for 749035 ms.
+Latest container from data type 33, content: 178, sum = 15931
+Diff: 0
+Sleep for 352595 ms.
+Latest container from data type 33, content: 179, sum = 16110
+Diff: 0
+Sleep for 317671 ms.
+Latest container from data type 33, content: 180, sum = 16290
+Diff: 0
+Sleep for 389626 ms.
+Latest container from data type 33, content: 181, sum = 16471
+Diff: 0
+Sleep for 413541 ms.
+Latest container from data type 33, content: 182, sum = 16653
+Diff: 0
+Sleep for 311129 ms.
+Latest container from data type 33, content: 183, sum = 16836
+Diff: 0
+Sleep for 9807.86 ms.
+Latest container from data type 33, content: 184, sum = 17020
+Diff: 0
+Sleep for 370464 ms.
+Latest container from data type 33, content: 185, sum = 17205
+Diff: 0
+Sleep for 226328 ms.
+Latest container from data type 33, content: 186, sum = 17391
+Diff: 0
+Sleep for 795399 ms.
+Latest container from data type 33, content: 187, sum = 17578
+Diff: 0
+Sleep for 105544 ms.
+Latest container from data type 33, content: 188, sum = 17766
+Diff: 0
+Sleep for 881817 ms.
+Latest container from data type 33, content: 189, sum = 17955
+Diff: 0
+Sleep for 695087 ms.
+Latest container from data type 33, content: 190, sum = 18145
+Diff: 0
+Sleep for 74406.5 ms.
+Latest container from data type 33, content: 191, sum = 18336
+Diff: 0
+Sleep for 357262 ms.
+Latest container from data type 33, content: 192, sum = 18528
+Diff: 0
+Sleep for 263958 ms.
+Latest container from data type 33, content: 193, sum = 18721
+Diff: 0
+Sleep for 260151 ms.
+Latest container from data type 33, content: 194, sum = 18915
+Diff: 0
+Sleep for 111457 ms.
+Latest container from data type 33, content: 195, sum = 19110
+Diff: 0
+Sleep for 1.02924e+06 ms.
+Latest container from data type 33, content: 196, sum = 19306
+Diff: 0
+Sleep for 72288.7 ms.
+Latest container from data type 33, content: 197, sum = 19503
+Diff: 0
+Sleep for 215300 ms.
+Latest container from data type 33, content: 198, sum = 19701
+Diff: 0
+Sleep for 240079 ms.
+Latest container from data type 33, content: 199, sum = 19900
+Diff: 0
+Sleep for 739249 ms.
+Latest container from data type 33, content: 200, sum = 20100
+Diff: 0
+Sleep for 633908 ms.
+Latest container from data type 33, content: 201, sum = 20301
+Diff: 0
+Sleep for 823063 ms.
+Latest container from data type 33, content: 202, sum = 20503
+Diff: 0
+Sleep for 336070 ms.
+Latest container from data type 33, content: 203, sum = 20706
+Diff: 0
+Sleep for 418872 ms.
+Latest container from data type 33, content: 204, sum = 20910
+Diff: 0
+Sleep for 814901 ms.
+Latest container from data type 33, content: 205, sum = 21115
+Diff: 0
+Sleep for 22895.6 ms.
+Latest container from data type 33, content: 206, sum = 21321
+Diff: 0
+Sleep for 1.0342e+06 ms.
+Latest container from data type 33, content: 207, sum = 21528
+Diff: 0
+Sleep for 745833 ms.
+Latest container from data type 33, content: 208, sum = 21736
+Diff: 0
+Sleep for 771931 ms.
+Latest container from data type 33, content: 209, sum = 21945
+Diff: 0
+Sleep for 286795 ms.
+Latest container from data type 33, content: 210, sum = 22155
+Diff: 0
+Sleep for 1.0635e+06 ms.
+Latest container from data type 33, content: 211, sum = 22366
+Diff: 0
+Sleep for 61556.4 ms.
+Latest container from data type 33, content: 212, sum = 22578
+Diff: 0
+Sleep for 700336 ms.
+Latest container from data type 33, content: 213, sum = 22791
+Diff: 0
+Sleep for 274632 ms.
+Latest container from data type 33, content: 214, sum = 23005
+Diff: 0
+Sleep for 71364.3 ms.
+Latest container from data type 33, content: 215, sum = 23220
+Diff: 0
+Sleep for 1.0708e+06 ms.
+Latest container from data type 33, content: 216, sum = 23436
+Diff: 0
+Sleep for 500960 ms.
+Latest container from data type 33, content: 217, sum = 23653
+Diff: 0
+Sleep for 866763 ms.
+Latest container from data type 33, content: 218, sum = 23871
+Diff: 0
+Sleep for 76344.7 ms.
+Latest container from data type 33, content: 219, sum = 24090
+Diff: 0
+Sleep for 282778 ms.
+Latest container from data type 33, content: 220, sum = 24310
+Diff: 0
+Sleep for 461850 ms.
+Latest container from data type 33, content: 221, sum = 24531
+Diff: 0
+Sleep for 150751 ms.
+Latest container from data type 33, content: 222, sum = 24753
+Diff: 0
+Sleep for 640039 ms.
+Latest container from data type 33, content: 223, sum = 24976
+Diff: 0
+Sleep for 725809 ms.
+Latest container from data type 33, content: 224, sum = 25200
+Diff: 0
+Sleep for 410903 ms.
+Latest container from data type 33, content: 225, sum = 25425
+Diff: 0
+Sleep for 751496 ms.
+Latest container from data type 33, content: 226, sum = 25651
+Diff: 0
+Sleep for 655051 ms.
+Latest container from data type 33, content: 227, sum = 25878
+Diff: 0
+Sleep for 483191 ms.
+Latest container from data type 33, content: 228, sum = 26106
+Diff: 0
+Sleep for 966796 ms.
+Latest container from data type 33, content: 229, sum = 26335
+Diff: 0
+Sleep for 895130 ms.
+Latest container from data type 33, content: 230, sum = 26565
+Diff: 0
+Sleep for 122441 ms.
+Latest container from data type 33, content: 231, sum = 26796
+Diff: 0
+Sleep for 500704 ms.
+Latest container from data type 33, content: 232, sum = 27028
+Diff: 0
+Sleep for 618193 ms.
+Latest container from data type 33, content: 233, sum = 27261
+Diff: 0
+Sleep for 458511 ms.
+Latest container from data type 33, content: 234, sum = 27495
+Diff: 0
+Sleep for 919576 ms.
+Latest container from data type 33, content: 235, sum = 27730
+Diff: 0
+Sleep for 333093 ms.
+Latest container from data type 33, content: 236, sum = 27966
+Diff: 0
+Sleep for 481406 ms.
+Latest container from data type 33, content: 237, sum = 28203
+Diff: 0
+Sleep for 853776 ms.
+Latest container from data type 33, content: 238, sum = 28441
+Diff: 0
+Sleep for 1.07893e+06 ms.
+Latest container from data type 33, content: 239, sum = 28680
+Diff: 0
+Sleep for 153337 ms.
+Latest container from data type 33, content: 240, sum = 28920
+Diff: 0
+Sleep for 40570.9 ms.
+Latest container from data type 33, content: 241, sum = 29161
+Diff: 0
+Sleep for 1.04243e+06 ms.
+Latest container from data type 33, content: 242, sum = 29403
+Diff: 0
+Sleep for 214894 ms.
+Latest container from data type 33, content: 243, sum = 29646
+Diff: 0
+Sleep for 740907 ms.
+Latest container from data type 33, content: 244, sum = 29890
+Diff: 0
+Sleep for 217062 ms.
+Latest container from data type 33, content: 245, sum = 30135
+Diff: 0
+Sleep for 286258 ms.
+Latest container from data type 33, content: 246, sum = 30381
+Diff: 0
+Sleep for 711707 ms.
+Latest container from data type 33, content: 247, sum = 30628
+Diff: 0
+Sleep for 718022 ms.
+Latest container from data type 33, content: 248, sum = 30876
+Diff: 0
+Sleep for 53021.2 ms.
+Latest container from data type 33, content: 249, sum = 31125
+Diff: 0
+Sleep for 788052 ms.
+Latest container from data type 33, content: 250, sum = 31375
+Diff: 0
+Sleep for 1.0008e+06 ms.
+Latest container from data type 33, content: 251, sum = 31626
+Diff: 0
+Sleep for 514872 ms.
+Latest container from data type 33, content: 252, sum = 31878
+Diff: 0
+Sleep for 938803 ms.
+Latest container from data type 33, content: 253, sum = 32131
+Diff: 0
+Sleep for 540839 ms.
+Latest container from data type 33, content: 254, sum = 32385
+Diff: 0
+Sleep for 140680 ms.
+Latest container from data type 33, content: 255, sum = 32640
+Diff: 0
+Sleep for 249706 ms.
+Latest container from data type 33, content: 256, sum = 32896
+Diff: 0
+Sleep for 192335 ms.
+Latest container from data type 33, content: 257, sum = 33153
+Diff: 0
+Sleep for 795731 ms.
+Latest container from data type 33, content: 258, sum = 33411
+Diff: 0
+Sleep for 732897 ms.
+Latest container from data type 33, content: 259, sum = 33670
+Diff: 0
+Sleep for 59131.4 ms.
+Latest container from data type 33, content: 260, sum = 33930
+Diff: 0
+Sleep for 590861 ms.
+Latest container from data type 33, content: 261, sum = 34191
+Diff: 0
+Sleep for 855338 ms.
+Latest container from data type 33, content: 262, sum = 34453
+Diff: 0
+Sleep for 559836 ms.
+Latest container from data type 33, content: 263, sum = 34716
+Diff: 0
+Sleep for 109053 ms.
+Latest container from data type 33, content: 264, sum = 34980
+Diff: 0
+Sleep for 213849 ms.
+Latest container from data type 33, content: 265, sum = 35245
+Diff: 0
+Sleep for 379412 ms.
+Latest container from data type 33, content: 266, sum = 35511
+Diff: 0
+Sleep for 442147 ms.
+Latest container from data type 33, content: 267, sum = 35778
+Diff: 0
+Sleep for 695255 ms.
+Latest container from data type 33, content: 268, sum = 36046
+Diff: 0
+Sleep for 133188 ms.
+Latest container from data type 33, content: 269, sum = 36315
+Diff: 0
+Sleep for 421073 ms.
+Latest container from data type 33, content: 270, sum = 36585
+Diff: 0
+Sleep for 848592 ms.
+Latest container from data type 33, content: 271, sum = 36856
+Diff: 0
+Sleep for 173759 ms.
+Latest container from data type 33, content: 272, sum = 37128
+Diff: 0
+Sleep for 363503 ms.
+Latest container from data type 33, content: 273, sum = 37401
+Diff: 0
+Sleep for 1.06349e+06 ms.
+Latest container from data type 33, content: 274, sum = 37675
+Diff: 0
+Sleep for 914666 ms.
+Latest container from data type 33, content: 275, sum = 37950
+Diff: 0
+Sleep for 580565 ms.
+Latest container from data type 33, content: 276, sum = 38226
+Diff: 0
+Sleep for 249744 ms.
+Latest container from data type 33, content: 277, sum = 38503
+Diff: 0
+Sleep for 526373 ms.
+Latest container from data type 33, content: 278, sum = 38781
+Diff: 0
+Sleep for 198587 ms.
+Latest container from data type 33, content: 279, sum = 39060
+Diff: 0
+Sleep for 302765 ms.
+Latest container from data type 33, content: 280, sum = 39340
+Diff: 0
+Sleep for 214425 ms.
+Latest container from data type 33, content: 281, sum = 39621
+Diff: 0
+Sleep for 99386.8 ms.
+Latest container from data type 33, content: 282, sum = 39903
+Diff: 0
+Sleep for 817636 ms.
+Latest container from data type 33, content: 283, sum = 40186
+Diff: 0
+Sleep for 53228 ms.
+Latest container from data type 33, content: 284, sum = 40470
+Diff: 0
+Sleep for 640226 ms.
+Latest container from data type 33, content: 285, sum = 40755
+Diff: 0
+Sleep for 958317 ms.
+Latest container from data type 33, content: 286, sum = 41041
+Diff: 0
+Sleep for 302934 ms.
+Latest container from data type 33, content: 287, sum = 41328
+Diff: 0
+Sleep for 832561 ms.
+Latest container from data type 33, content: 288, sum = 41616
+Diff: 0
+Sleep for 654048 ms.
+Latest container from data type 33, content: 289, sum = 41905
+Diff: 0
+Sleep for 1.03583e+06 ms.
+Latest container from data type 33, content: 290, sum = 42195
+Diff: 0
+Sleep for 891692 ms.
+Latest container from data type 33, content: 291, sum = 42486
+Diff: 0
+Sleep for 144909 ms.
+Latest container from data type 33, content: 292, sum = 42778
+Diff: 0
+Sleep for 791169 ms.
+Latest container from data type 33, content: 293, sum = 43071
+Diff: 0
+Sleep for 351528 ms.
+Latest container from data type 33, content: 294, sum = 43365
+Diff: 0
+Sleep for 253962 ms.
+Latest container from data type 33, content: 295, sum = 43660
+Diff: 0
+Sleep for 1.00502e+06 ms.
+Latest container from data type 33, content: 296, sum = 43956
+Diff: 0
+Sleep for 730940 ms.
+Latest container from data type 33, content: 297, sum = 44253
+Diff: 0
+Sleep for 696109 ms.
+Latest container from data type 33, content: 298, sum = 44551
+Diff: 0
+Sleep for 600273 ms.
+Latest container from data type 33, content: 299, sum = 44850
+Diff: 0
+Sleep for 864128 ms.
+Latest container from data type 33, content: 300, sum = 45150
+Diff: 0
+Sleep for 17181.6 ms.
+Latest container from data type 33, content: 301, sum = 45451
+Diff: 0
+Sleep for 348865 ms.
+Latest container from data type 33, content: 302, sum = 45753
+Diff: 0
+Sleep for 1.03789e+06 ms.
+Latest container from data type 33, content: 303, sum = 46056
+Diff: 0
+Sleep for 380684 ms.
+Latest container from data type 33, content: 304, sum = 46360
+Diff: 0
+Sleep for 312351 ms.
+Latest container from data type 33, content: 305, sum = 46665
+Diff: 0
+Sleep for 852553 ms.
+Latest container from data type 33, content: 306, sum = 46971
+Diff: 0
+Sleep for 961249 ms.
+Latest container from data type 33, content: 307, sum = 47278
+Diff: 0
+Sleep for 562094 ms.
+Latest container from data type 33, content: 308, sum = 47586
+Diff: 0
+Sleep for 278926 ms.
+Latest container from data type 33, content: 309, sum = 47895
+Diff: 0
+Sleep for 59835.9 ms.
+Latest container from data type 33, content: 310, sum = 48205
+Diff: 0
+Sleep for 864859 ms.
+Latest container from data type 33, content: 311, sum = 48516
+Diff: 0
+Sleep for 493351 ms.
+Latest container from data type 33, content: 312, sum = 48828
+Diff: 0
+Sleep for 159223 ms.
+Latest container from data type 33, content: 313, sum = 49141
+Diff: 0
+Sleep for 582495 ms.
+Latest container from data type 33, content: 314, sum = 49455
+Diff: 0
+Sleep for 546579 ms.
+Latest container from data type 33, content: 315, sum = 49770
+Diff: 0
+Sleep for 799448 ms.
+Latest container from data type 33, content: 316, sum = 50086
+Diff: 0
+Sleep for 440812 ms.
+Latest container from data type 33, content: 317, sum = 50403
+Diff: 0
+Sleep for 849513 ms.
+Latest container from data type 33, content: 318, sum = 50721
+Diff: 0
+Sleep for 532009 ms.
+Latest container from data type 33, content: 319, sum = 51040
+Diff: 0
+Sleep for 1.09486e+06 ms.
+Latest container from data type 33, content: 320, sum = 51360
+Diff: 0
+Sleep for 785344 ms.
+Latest container from data type 33, content: 321, sum = 51681
+Diff: 0
+Sleep for 323702 ms.
+Latest container from data type 33, content: 322, sum = 52003
+Diff: 0
+Sleep for 139769 ms.
+Latest container from data type 33, content: 323, sum = 52326
+Diff: 0
+Sleep for 476513 ms.
+Latest container from data type 33, content: 324, sum = 52650
+Diff: 0
+Sleep for 675230 ms.
+Latest container from data type 33, content: 325, sum = 52975
+Diff: 0
+Sleep for 393732 ms.
+Latest container from data type 33, content: 326, sum = 53301
+Diff: 0
+Sleep for 381530 ms.
+Latest container from data type 33, content: 327, sum = 53628
+Diff: 0
+Sleep for 306170 ms.
+Latest container from data type 33, content: 328, sum = 53956
+Diff: 0
+Sleep for 1.08984e+06 ms.
+done.
+.OK!
+<end of output>
+Test time = 193.20 sec
+----------------------------------------------------------
+Test Passed.
+"ManagedLevelTest4TestSuite.h-TestSuite" end time: Apr 01 17:59 CEST
+"ManagedLevelTest4TestSuite.h-TestSuite" time elapsed: 00:03:13
+----------------------------------------------------------
+
+11/17 Testing: SupercomponentClientModuleTest5TestSuite.h-TestSuite
+11/17 Test: SupercomponentClientModuleTest5TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest5TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest5TestSuite.h-TestSuite" start time: Apr 01 17:59 CEST
+Output:
+----------------------------------------------------------
+IP: 127.0.0.1 Port: 19000 ManagedLevel: ServerInformation::ML_NONE (0) 
+IP: 127.0.0.1 Port: 19000 ManagedLevel: ServerInformation::ML_PULSE (1) 
+Running odsupercomponent-SupercomponentClientModuleTest5TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest5TestSuite.h-TestSuite" end time: Apr 01 17:59 CEST
+"SupercomponentClientModuleTest5TestSuite.h-TestSuite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/17 Testing: ManagedLevelTest5TestSuite.h-TestSuite
+12/17 Test: ManagedLevelTest5TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/ManagedLevelTest5TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"ManagedLevelTest5TestSuite.h-TestSuite" start time: Apr 01 17:59 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-ManagedLevelTest5TestSuite.h tests (1 test)done.
+.OK!
+<end of output>
+Test time =   6.01 sec
+----------------------------------------------------------
+Test Passed.
+"ManagedLevelTest5TestSuite.h-TestSuite" end time: Apr 01 17:59 CEST
+"ManagedLevelTest5TestSuite.h-TestSuite" time elapsed: 00:00:06
+----------------------------------------------------------
+
+13/17 Testing: LoggingLevelInfoTestSuite.h-TestSuite
+13/17 Test: LoggingLevelInfoTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/LoggingLevelInfoTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"LoggingLevelInfoTestSuite.h-TestSuite" start time: Apr 01 17:59 CEST
+Output:
+----------------------------------------------------------
+Starting odsupercomponent...
+odsupercomponent started.
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 2 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 3 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 4 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+Running odsupercomponent-LoggingLevelInfoTestSuite.h tests (1 test)done.
+.OK!
+<end of output>
+Test time =  15.52 sec
+----------------------------------------------------------
+Test Passed.
+"LoggingLevelInfoTestSuite.h-TestSuite" end time: Apr 01 18:00 CEST
+"LoggingLevelInfoTestSuite.h-TestSuite" time elapsed: 00:00:15
+----------------------------------------------------------
+
+14/17 Testing: SupercomponentClientModuleTest4TestSuite.h-TestSuite
+14/17 Test: SupercomponentClientModuleTest4TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest4TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest4TestSuite.h-TestSuite" start time: Apr 01 18:00 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-SupercomponentClientModuleTest4TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   1.00 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest4TestSuite.h-TestSuite" end time: Apr 01 18:00 CEST
+"SupercomponentClientModuleTest4TestSuite.h-TestSuite" time elapsed: 00:00:01
+----------------------------------------------------------
+
+15/17 Testing: LoggingLevelNoneTestSuite.h-TestSuite
+15/17 Test: LoggingLevelNoneTestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/LoggingLevelNoneTestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"LoggingLevelNoneTestSuite.h-TestSuite" start time: Apr 01 18:00 CEST
+Output:
+----------------------------------------------------------
+Starting odsupercomponent...
+odsupercomponent started.
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 2 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 3 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+[odsupercomponent]: WARNING!!! MODULE Name: examplelogger Identifier: 4 Version: No version set. Frequency: 10  AREADY CONNECTED: Consider using --id to differentiate modules!
+Running odsupercomponent-LoggingLevelNoneTestSuite.h tests (1 test)done.
+.OK!
+<end of output>
+Test time =  15.52 sec
+----------------------------------------------------------
+Test Passed.
+"LoggingLevelNoneTestSuite.h-TestSuite" end time: Apr 01 18:00 CEST
+"LoggingLevelNoneTestSuite.h-TestSuite" time elapsed: 00:00:15
+----------------------------------------------------------
+
+16/17 Testing: SupercomponentClientModuleTest8TestSuite.h-TestSuite
+16/17 Test: SupercomponentClientModuleTest8TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest8TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest8TestSuite.h-TestSuite" start time: Apr 01 18:00 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-SupercomponentClientModuleTest8TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   2.01 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest8TestSuite.h-TestSuite" end time: Apr 01 18:00 CEST
+"SupercomponentClientModuleTest8TestSuite.h-TestSuite" time elapsed: 00:00:02
+----------------------------------------------------------
+
+17/17 Testing: SupercomponentClientModuleTest2TestSuite.h-TestSuite
+17/17 Test: SupercomponentClientModuleTest2TestSuite.h-TestSuite
+Command: "/home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build/SupercomponentClientModuleTest2TestSuite.h-TestSuite"
+Directory: /home/viktor/OpenDaVINCI/build/odsupercomponent-prefix/src/odsupercomponent-build
+"SupercomponentClientModuleTest2TestSuite.h-TestSuite" start time: Apr 01 18:00 CEST
+Output:
+----------------------------------------------------------
+Running odsupercomponent-SupercomponentClientModuleTest2TestSuite.h tests (1 test).OK!
+<end of output>
+Test time =   1.00 sec
+----------------------------------------------------------
+Test Passed.
+"SupercomponentClientModuleTest2TestSuite.h-TestSuite" end time: Apr 01 18:00 CEST
+"SupercomponentClientModuleTest2TestSuite.h-TestSuite" time elapsed: 00:00:01
+----------------------------------------------------------
+
+End testing: Apr 01 18:00 CEST

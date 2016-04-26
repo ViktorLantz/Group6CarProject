@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-PulseAckContainersMessageTestSuite.h" tests="6" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:28 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/PulseAckContainersMessageTestSuite.h" >
+    <testcase name="testPulseEmpty" classname="PulseAckContainersTest" line="40" >    </testcase>
+    <testcase name="testPulseContainers" classname="PulseAckContainersTest" line="53" >    </testcase>
+    <testcase name="testPulseContainersSetValues" classname="PulseAckContainersTest" line="99" >    </testcase>
+    <testcase name="testPulseAckContainersEmpty" classname="PulseAckContainersTest" line="144" >    </testcase>
+    <testcase name="testPulseAckContainers" classname="PulseAckContainersTest" line="157" >    </testcase>
+    <testcase name="testPulseAckContainers_from_list" classname="PulseAckContainersTest" line="203" >    </testcase>
+</testsuite>
+</testsuites>

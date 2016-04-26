@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-TimeFactoryTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:02 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/TimeFactoryTestSuite.h" >
+    <testcase name="testCopyControlledTime" classname="TimeFactoryTest" line="53" >    </testcase>
+    <testcase name="testControlledTimeFactoryTestSuite" classname="TimeFactoryTest" line="66" >    </testcase>
+</testsuite>
+</testsuites>

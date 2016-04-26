@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-CommandLineParserTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:20 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/CommandLineParserTestSuite.h" >
+    <testcase name="testParse" classname="CommandLineParserTestSuite" line="39" >    </testcase>
+    <testcase name="testParseSeveralArgumentFromSameKey" classname="CommandLineParserTestSuite" line="67" >    </testcase>
+    <testcase name="testGetInvalidArgument" classname="CommandLineParserTestSuite" line="107" >    </testcase>
+    <testcase name="testParseIncompleteArgument" classname="CommandLineParserTestSuite" line="121" >    </testcase>
+</testsuite>
+</testsuites>

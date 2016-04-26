@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libautomotivedata-automotive_GenericCANMessageTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/automotive_GenericCANMessageTestSuite.h" >
+    <testcase name="testCreateObject" classname="automotive_GenericCANMessage_TestSuite" line="29" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="automotive_GenericCANMessage_TestSuite" line="40" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="automotive_GenericCANMessage_TestSuite" line="58" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="automotive_GenericCANMessage_TestSuite" line="76" >    </testcase>
+</testsuite>
+</testsuites>

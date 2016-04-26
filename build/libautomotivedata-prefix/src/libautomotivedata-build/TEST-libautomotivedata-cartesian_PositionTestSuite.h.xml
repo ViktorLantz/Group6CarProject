@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libautomotivedata-cartesian_PositionTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/cartesian_PositionTestSuite.h" >
+    <testcase name="testCreateObject" classname="cartesian_Position_TestSuite" line="30" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="cartesian_Position_TestSuite" line="38" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="cartesian_Position_TestSuite" line="53" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="cartesian_Position_TestSuite" line="68" >    </testcase>
+</testsuite>
+</testsuites>

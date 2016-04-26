@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-RuntimeControlContainerTest3TestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:27 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/RuntimeControlContainerTest3TestSuite.h" >
+    <testcase name="testRuntimeControlContainerRegularRunReceivingSendingAppTwiceAsFastAsSC" classname="RuntimeControlContainerTest" line="420" >    </testcase>
+</testsuite>
+</testsuites>

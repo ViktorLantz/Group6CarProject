@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-TCPConnectionTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:16 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/TCPConnectionTestSuite.h" >
+    <testcase name="testTransfer" classname="TCPConnectionTestSuite" line="165" >    </testcase>
+    <testcase name="testError" classname="TCPConnectionTestSuite" line="184" >    </testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="example-boxparker-" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:50:02 2016" file="/home/viktor/OpenDaVINCI/automotive/miniature/studies/example-boxparker/testsuites/ExampleDriverSimulationTestSuite.h" >
+    <testcase name="testRunSimulation" classname="ExampleDriverSimulationTestSuite" line="33" >
+        <system-out ></system-out>
+
+        <system-err ></system-err>
+    </testcase>
+</testsuite>
+</testsuites>

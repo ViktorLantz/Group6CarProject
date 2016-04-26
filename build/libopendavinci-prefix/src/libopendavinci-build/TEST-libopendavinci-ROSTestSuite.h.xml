@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-ROSTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:44:52 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/ROSTestSuite.h" >
+    <testcase name="testSerializationDeserialization" classname="ROSTest" line="256" >    </testcase>
+    <testcase name="testSerializationDeserializationInheritance" classname="ROSTest" line="283" >    </testcase>
+    <testcase name="testSerializationDeserializationFloatingPoint" classname="ROSTest" line="316" >    </testcase>
+    <testcase name="testRosSerialisation" classname="ROSTest" line="347" >    </testcase>
+</testsuite>
+</testsuites>

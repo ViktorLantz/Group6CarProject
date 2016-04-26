@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libtest17-sub_structure_Test17ChildTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:52:45 2016" file="/home/viktor/OpenDaVINCI/odDataStructureGenerator/org.opendavinci.datamodel/test/odvd/reference/Test17_withCMake/libtest17/testsuites/sub_structure_Test17ChildTestSuite.h" >
+    <testcase name="testCreateObject" classname="sub_structure_Test17Child_TestSuite" line="28" >    </testcase>
+    <testcase name="testCreateAndCopyObject" classname="sub_structure_Test17Child_TestSuite" line="39" >    </testcase>
+    <testcase name="testCreateAndAssignObject" classname="sub_structure_Test17Child_TestSuite" line="60" >    </testcase>
+    <testcase name="testCreateAndSerializeObject" classname="sub_structure_Test17Child_TestSuite" line="81" >    </testcase>
+</testsuite>
+</testsuites>

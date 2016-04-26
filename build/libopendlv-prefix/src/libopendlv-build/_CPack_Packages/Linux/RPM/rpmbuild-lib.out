@@ -1,0 +1,13 @@
+Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.ozw4AG
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.sf5k5p
+Processing files: opendlv-lib-3.0.2-1.x86_64
+Provides: libopendlv.so()(64bit) opendlv-lib = 3.0.2-1 opendlv-lib(x86-64) = 3.0.2-1
+Requires(interp): /bin/sh /bin/sh /bin/sh /bin/sh
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires(pre): /bin/sh
+Requires(post): /bin/sh
+Requires(preun): /bin/sh
+Requires(postun): /bin/sh
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/viktor/OpenDaVINCI/build/libopendlv-prefix/src/libopendlv-build/_CPack_Packages/Linux/RPM/opendlv_3.0.2_x86_64/lib
+Wrote: /home/viktor/OpenDaVINCI/build/libopendlv-prefix/src/libopendlv-build/_CPack_Packages/Linux/RPM/opendlv_3.0.2_x86_64-lib.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.9j2lYn

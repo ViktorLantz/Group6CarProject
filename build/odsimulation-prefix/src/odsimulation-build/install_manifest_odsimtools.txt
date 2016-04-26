@@ -1,0 +1,6 @@
+/usr/bin/odsimcamera
+/usr/bin/odsimchasecar
+/usr/bin/odsimdrivenpath
+/usr/bin/odsimegocontroller
+/usr/bin/odsimirus
+/usr/bin/odsimvehicle

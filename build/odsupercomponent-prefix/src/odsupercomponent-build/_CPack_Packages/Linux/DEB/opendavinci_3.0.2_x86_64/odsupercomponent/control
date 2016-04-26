@@ -1,0 +1,10 @@
+Package: opendavinci-odsupercomponent
+Version: 3.0.2
+Section: devel
+Priority: optional
+Architecture: amd64
+Depends: opendavinci-lib
+Installed-Size: 290
+Maintainer: Christian Berger
+Description: odsupercomponent is a configuration and monitoring component for distributed software systems realized with OpenDaVINCI.
+

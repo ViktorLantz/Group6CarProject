@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-MutexTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:22 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/MutexTestSuite.h" >
+    <testcase name="testTryLock" classname="MutexTest" line="48" >    </testcase>
+    <testcase name="testLockAndUnlock" classname="MutexTest" line="54" >    </testcase>
+    <testcase name="testScopedLock" classname="MutexTest" line="64" >    </testcase>
+</testsuite>
+</testsuites>

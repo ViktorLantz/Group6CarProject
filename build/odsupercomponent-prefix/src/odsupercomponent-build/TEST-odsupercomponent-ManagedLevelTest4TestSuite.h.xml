@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="odsupercomponent-ManagedLevelTest4TestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:59:47 2016" file="/home/viktor/OpenDaVINCI/odsupercomponent/testsuites/ManagedLevelTest4TestSuite.h" >
+    <testcase name="testManagedLevelPulseTimeAck_SenderReceiver" classname="ManagedLevelTest" line="318" >
+        <system-out ></system-out>
+    </testcase>
+</testsuite>
+</testsuites>

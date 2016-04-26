@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-StringProtocolTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:44:52 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/StringProtocolTestSuite.h" >
+    <testcase name="testStringProtocolSend" classname="StringProtocolTest" line="53" >    </testcase>
+    <testcase name="testStringProtocolReceive" classname="StringProtocolTest" line="74" >    </testcase>
+</testsuite>
+</testsuites>

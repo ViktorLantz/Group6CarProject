@@ -1,0 +1,10 @@
+Package: opendavinci-odtools
+Version: 3.0.2
+Section: devel
+Priority: optional
+Architecture: amd64
+Depends: opendavinci-lib
+Installed-Size: 384
+Maintainer: Christian Berger
+Description: odtools contains a set of commandline tools to maintain distributed software systems realized with OpenDaVINCI.
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-EigenExamplesTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:12 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/EigenExamplesTestSuite.h" >
+    <testcase name="testEigenDataMappingOneByte" classname="EigenExamplesTest" line="46" >
+        <system-out ></system-out>
+    </testcase>
+    <testcase name="testEigenDataMappingTwoBytes" classname="EigenExamplesTest" line="118" >
+        <system-out ></system-out>
+    </testcase>
+    <testcase name="testEigenDataMappingTwoBytesUsingSharedPointCloud" classname="EigenExamplesTest" line="191" >
+        <system-out ></system-out>
+    </testcase>
+</testsuite>
+</testsuites>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="odplayer-PlayerHalfRealtimeTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 18:01:06 2016" file="/home/viktor/OpenDaVINCI/odtools/odplayer/testsuites/PlayerHalfRealtimeTestSuite.h" >
+    <testcase name="testHalfRealtimeReplayNoRewind" classname="PlayerModuleTest" line="123" >
+        <system-err ></system-err>
+    </testcase>
+</testsuite>
+</testsuites>

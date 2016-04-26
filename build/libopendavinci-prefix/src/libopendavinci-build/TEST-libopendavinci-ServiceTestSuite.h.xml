@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-ServiceTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:21 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/ServiceTestSuite.h" >
+    <testcase name="testService" classname="ServiceTest" line="116" >    </testcase>
+    <testcase name="testSeveralServices" classname="ServiceTest" line="135" >    </testcase>
+</testsuite>
+</testsuites>

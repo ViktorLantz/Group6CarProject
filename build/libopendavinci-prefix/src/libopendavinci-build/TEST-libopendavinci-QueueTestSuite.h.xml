@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-QueueTestSuite.h" tests="8" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:05 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/QueueTestSuite.h" >
+    <testcase name="testLIFO" classname="QueueTest" line="248" >    </testcase>
+    <testcase name="testFIFO" classname="QueueTest" line="269" >    </testcase>
+    <testcase name="testBufferedFIFOAsRegularFIFO" classname="QueueTest" line="289" >    </testcase>
+    <testcase name="testBufferedFIFO" classname="QueueTest" line="309" >    </testcase>
+    <testcase name="testFixedSizeBufferedFIFO" classname="QueueTest" line="380" >    </testcase>
+    <testcase name="testBufferedLIFOAsRegularLIFO" classname="QueueTest" line="470" >    </testcase>
+    <testcase name="testBufferedLIFO" classname="QueueTest" line="490" >    </testcase>
+    <testcase name="testFixedSizeBufferedLIFO" classname="QueueTest" line="561" >    </testcase>
+</testsuite>
+</testsuites>

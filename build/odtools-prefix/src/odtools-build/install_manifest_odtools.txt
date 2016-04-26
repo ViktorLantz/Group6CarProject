@@ -1,0 +1,14 @@
+/usr/bin/odfilter
+/usr/man/man1/odfilter.1
+/usr/bin/odplayer
+/usr/man/man1/odplayer.1
+/usr/bin/odrecintegrity
+/usr/man/man1/odrecintegrity.1
+/usr/bin/odrecorder
+/usr/man/man1/odrecorder.1
+/usr/bin/odredirector
+/usr/man/man1/odredirector.1
+/usr/bin/odsplit
+/usr/man/man1/odsplit.1
+/usr/bin/odspy
+/usr/man/man1/odspy.1

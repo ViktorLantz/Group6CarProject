@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendlv-ScenarioTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:49:11 2016" file="/home/viktor/OpenDaVINCI/libopendlv/testsuites/ScenarioTestSuite.h" >
+    <testcase name="testIDVertex3" classname="ScenarioTest" line="60" >    </testcase>
+    <testcase name="testParsingCorruptSCNGrammar" classname="ScenarioTest" line="74" >    </testcase>
+    <testcase name="testParsingSCNGrammar" classname="ScenarioTest" line="90" >    </testcase>
+</testsuite>
+</testsuites>

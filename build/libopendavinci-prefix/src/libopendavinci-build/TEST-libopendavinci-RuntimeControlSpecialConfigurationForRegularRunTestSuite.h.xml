@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-RuntimeControlSpecialConfigurationForRegularRunTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:44:52 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/RuntimeControlSpecialConfigurationForRegularRunTestSuite.h" >
+    <testcase name="testRuntimeControlSpecializedConfigurationRegularRun" classname="RuntimeControlTest" line="113" >    </testcase>
+</testsuite>
+</testsuites>

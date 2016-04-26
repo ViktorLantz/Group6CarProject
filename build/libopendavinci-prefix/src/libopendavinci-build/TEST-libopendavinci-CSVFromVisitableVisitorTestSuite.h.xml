@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="libopendavinci-CSVFromVisitableVisitorTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:16 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/CSVFromVisitableVisitorTestSuite.h" >
+    <testcase name="testCSV_noheader" classname="FieldTest" line="134" >    </testcase>
+    <testcase name="testCSV_withheader" classname="FieldTest" line="154" >    </testcase>
+    <testcase name="testCSV_default_twice" classname="FieldTest" line="175" >    </testcase>
+</testsuite>
+</testsuites>
