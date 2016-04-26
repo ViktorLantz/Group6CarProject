@@ -5,20 +5,20 @@ Makefile
 cmake_install.cmake
 install_manifest.txt
 
-build
-cmake
-cxxtest
-docs
-libautomotivedata
-libopendavinci
-libopendlv
-odcockpit
-odDataStructureGenerator
-odlogo
-odsimulation
-odsupercomponent
-odtools
-tutorials
+build/
+cmake/
+cxxtest/
+docs/
+libautomotivedata/
+libopendavinci/
+libopendlv/
+odcockpit/
+odDataStructureGenerator/
+odlogo/
+odsimulation/
+odsupercomponent/
+odtools/
+tutorials/
 
 AUTHORS
 AutomotiveData.odvd
