@@ -19,3 +19,11 @@ odsimulation
 odsupercomponent
 odtools
 tutorials
+
+AUTHORS
+AutomotiveData.odvd
+CMakeLists.txt
+CodingGuidelines.txt
+DataTypes.list
+README.md
+VERSION
