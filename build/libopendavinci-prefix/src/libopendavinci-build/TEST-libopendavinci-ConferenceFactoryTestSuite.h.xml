@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-ConferenceFactoryTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:12 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/ConferenceFactoryTestSuite.h" >
-    <testcase name="testControlledContainerFactoryTestSuite" classname="ConferenceFactoryTest" line="87" >    </testcase>
-</testsuite>
-</testsuites>

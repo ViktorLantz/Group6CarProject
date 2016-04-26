@@ -1,1 +1,0 @@
-../tutorials/udpreceivepackets/README.rst

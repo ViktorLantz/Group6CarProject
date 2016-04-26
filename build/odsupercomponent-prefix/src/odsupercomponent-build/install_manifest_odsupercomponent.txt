@@ -1,2 +1,0 @@
-/usr/bin/odsupercomponent
-/usr/man/man1/odsupercomponent.1

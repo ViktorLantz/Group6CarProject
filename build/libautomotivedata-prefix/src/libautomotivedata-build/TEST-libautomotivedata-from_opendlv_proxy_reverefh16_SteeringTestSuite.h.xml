@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libautomotivedata-from_opendlv_proxy_reverefh16_SteeringTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/from_opendlv_proxy_reverefh16_SteeringTestSuite.h" >
-    <testcase name="testCreateObject" classname="from_opendlv_proxy_reverefh16_Steering_TestSuite" line="28" >    </testcase>
-    <testcase name="testCreateAndCopyObject" classname="from_opendlv_proxy_reverefh16_Steering_TestSuite" line="42" >    </testcase>
-    <testcase name="testCreateAndAssignObject" classname="from_opendlv_proxy_reverefh16_Steering_TestSuite" line="69" >    </testcase>
-    <testcase name="testCreateAndSerializeObject" classname="from_opendlv_proxy_reverefh16_Steering_TestSuite" line="96" >    </testcase>
-</testsuite>
-</testsuites>

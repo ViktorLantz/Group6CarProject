@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="odrecorder-RecorderRemoteControlTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 18:01:53 2016" file="/home/viktor/OpenDaVINCI/odtools/odrecorder/testsuites/RecorderRemoteControlTestSuite.h" >
-    <testcase name="testRecorderRemoteControl" classname="RecorderTest" line="98" >    </testcase>
-</testsuite>
-</testsuites>

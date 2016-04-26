@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="odsupercomponent-ManagedLevelTest2TestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:56:34 2016" file="/home/viktor/OpenDaVINCI/odsupercomponent/testsuites/ManagedLevelTest2TestSuite.h" >
-    <testcase name="testManagedLevelNone_stop_supercomponent_yields_stop_client" classname="ManagedLevelTest" line="318" >
-        <system-out ></system-out>
-    </testcase>
-</testsuite>
-</testsuites>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libtest2-Test2bTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:52:45 2016" file="/home/viktor/OpenDaVINCI/odDataStructureGenerator/org.opendavinci.datamodel/test/odvd/reference/Test2_withCMake/libtest2/testsuites/Test2bTestSuite.h" >
-    <testcase name="testCreateObject" classname="Test2b_TestSuite" line="28" >    </testcase>
-    <testcase name="testCreateAndCopyObject" classname="Test2b_TestSuite" line="35" >    </testcase>
-    <testcase name="testCreateAndAssignObject" classname="Test2b_TestSuite" line="49" >    </testcase>
-    <testcase name="testCreateAndSerializeObject" classname="Test2b_TestSuite" line="63" >    </testcase>
-</testsuite>
-</testsuites>

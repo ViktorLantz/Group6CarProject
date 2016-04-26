@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="sidewaysparker-SidewaysParkerTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:49:55 2016" file="/home/viktor/OpenDaVINCI/automotive/miniature/sidewaysparker/testsuites/SidewaysParkerTestSuite.h" >
-    <testcase name="testSidewaysParkerSuccessfullyCreated" classname="SidewaysParkerTest" line="83" >    </testcase>
-</testsuite>
-</testsuites>

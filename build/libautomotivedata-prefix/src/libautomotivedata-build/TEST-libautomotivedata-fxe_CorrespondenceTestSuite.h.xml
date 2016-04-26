@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libautomotivedata-fxe_CorrespondenceTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:47:31 2016" file="/home/viktor/OpenDaVINCI/libautomotivedata/testsuites/fxe_CorrespondenceTestSuite.h" >
-    <testcase name="testCreateObject" classname="fxe_Correspondence_TestSuite" line="30" >    </testcase>
-    <testcase name="testCreateAndCopyObject" classname="fxe_Correspondence_TestSuite" line="41" >    </testcase>
-    <testcase name="testCreateAndAssignObject" classname="fxe_Correspondence_TestSuite" line="63" >    </testcase>
-    <testcase name="testCreateAndSerializeObject" classname="fxe_Correspondence_TestSuite" line="86" >    </testcase>
-</testsuite>
-</testsuites>

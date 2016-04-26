@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-RuntimeControlContainerTest4TestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:12 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/RuntimeControlContainerTest4TestSuite.h" >
-    <testcase name="testRuntimeControlContainerRegularRunReceivingSendingAppHalfAsFastAsSC" classname="RuntimeControlContainerTest" line="420" >    </testcase>
-</testsuite>
-</testsuites>

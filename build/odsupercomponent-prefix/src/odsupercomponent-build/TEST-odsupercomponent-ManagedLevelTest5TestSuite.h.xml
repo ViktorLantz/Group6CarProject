@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="odsupercomponent-ManagedLevelTest5TestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:59:53 2016" file="/home/viktor/OpenDaVINCI/odsupercomponent/testsuites/ManagedLevelTest5TestSuite.h" >
-    <testcase name="testManagedLevelPulseTime" classname="ManagedLevelTest" line="318" >
-        <system-out ></system-out>
-    </testcase>
-</testsuite>
-</testsuites>

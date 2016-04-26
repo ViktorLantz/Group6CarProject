@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-FieldTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:20 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/FieldTestSuite.h" >
-    <testcase name="testField1" classname="FieldTest" line="40" >    </testcase>
-    <testcase name="testField2" classname="FieldTest" line="59" >    </testcase>
-    <testcase name="testFiel32" classname="FieldTest" line="78" >    </testcase>
-</testsuite>
-</testsuites>

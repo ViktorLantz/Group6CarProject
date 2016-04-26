@@ -1,1 +1,0 @@
-../tutorials/helloworld/README.rst

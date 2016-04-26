@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libtest20-Test20aTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:52:45 2016" file="/home/viktor/OpenDaVINCI/odDataStructureGenerator/org.opendavinci.datamodel/test/odvd/reference/Test20_withCMake/libtest20/testsuites/Test20aTestSuite.h" >
-    <testcase name="testCreateObject" classname="Test20a_TestSuite" line="29" >    </testcase>
-    <testcase name="testCreateAndCopyObject" classname="Test20a_TestSuite" line="39" >    </testcase>
-    <testcase name="testCreateAndAssignObject" classname="Test20a_TestSuite" line="59" >    </testcase>
-    <testcase name="testCreateAndSerializeObject" classname="Test20a_TestSuite" line="79" >    </testcase>
-</testsuite>
-</testsuites>

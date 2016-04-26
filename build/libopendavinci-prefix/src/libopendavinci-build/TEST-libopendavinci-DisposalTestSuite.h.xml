@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-DisposalTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:44:56 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/DisposalTestSuite.h" >
-    <testcase name="testDisposal" classname="DisposalTest" line="42" >    </testcase>
-</testsuite>
-</testsuites>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-RuntimeControlContainerMultipleAppsTest9TestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:04 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/RuntimeControlContainerMultipleAppsTest9TestSuite.h" >
-    <testcase name="testRuntimeControlContainerRegularRunReceivingSendingTwoAppsA1TwiceAsFastAsA2FreqTwoSystemPartsSP2TwiceAsFastAsSP1" classname="RuntimeControlContainerMultipleAppsTest" line="502" >    </testcase>
-</testsuite>
-</testsuites>

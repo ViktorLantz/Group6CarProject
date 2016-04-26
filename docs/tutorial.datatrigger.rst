@@ -1,1 +1,0 @@
-../tutorials/datatrigger/README.rst

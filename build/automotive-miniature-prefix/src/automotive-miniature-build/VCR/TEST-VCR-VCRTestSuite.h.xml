@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="VCR-VCRTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:49:55 2016" file="/home/viktor/OpenDaVINCI/automotive/miniature/VCR/testsuites/VCRTestSuite.h" >
-    <testcase name="testVCRSuccessfullyCreated" classname="VCRTest" line="101" >    </testcase>
-    <testcase name="testVCRProcessingMethod" classname="VCRTest" line="105" >    </testcase>
-    <testcase name="testVCRProcessingMethodInvalidSharedMemory" classname="VCRTest" line="133" >    </testcase>
-</testsuite>
-</testsuites>

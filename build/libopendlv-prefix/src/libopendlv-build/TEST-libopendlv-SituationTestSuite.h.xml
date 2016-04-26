@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendlv-SituationTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:49:11 2016" file="/home/viktor/OpenDaVINCI/libopendlv/testsuites/SituationTestSuite.h" >
-    <testcase name="testParsingCorruptSITGrammar" classname="SituationTest" line="56" >    </testcase>
-    <testcase name="testParsingSITGrammar" classname="SituationTest" line="73" >    </testcase>
-</testsuite>
-</testsuites>

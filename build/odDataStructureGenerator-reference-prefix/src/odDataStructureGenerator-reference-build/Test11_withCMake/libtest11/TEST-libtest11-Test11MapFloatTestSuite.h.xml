@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libtest11-Test11MapFloatTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:52:45 2016" file="/home/viktor/OpenDaVINCI/odDataStructureGenerator/org.opendavinci.datamodel/test/odvd/reference/Test11_withCMake/libtest11/testsuites/Test11MapFloatTestSuite.h" >
-    <testcase name="testCreateObject" classname="Test11MapFloat_TestSuite" line="28" >    </testcase>
-    <testcase name="testCreateAndCopyObject" classname="Test11MapFloat_TestSuite" line="527" >    </testcase>
-    <testcase name="testCreateAndAssignObject" classname="Test11MapFloat_TestSuite" line="1115" >    </testcase>
-    <testcase name="testCreateAndSerializeObject" classname="Test11MapFloat_TestSuite" line="1710" >    </testcase>
-</testsuite>
-</testsuites>

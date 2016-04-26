@@ -1,1 +1,0 @@
-../tutorials/ipcsharedmemory/README.rst

@@ -1,1 +1,0 @@
-../tutorials/realtimeservice/README.rst

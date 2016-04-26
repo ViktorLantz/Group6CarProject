@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="lanefollower-LaneFollowerTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:49:55 2016" file="/home/viktor/OpenDaVINCI/automotive/miniature/lanefollower/testsuites/LaneFollowerTestSuite.h" >
-    <testcase name="testLaneFollowerSuccessfullyCreated" classname="LaneFollowerTest" line="101" >    </testcase>
-    <testcase name="testLaneFollowerProcessingMethod" classname="LaneFollowerTest" line="105" >    </testcase>
-    <testcase name="testLaneFollowerProcessingMethodInvalidSharedMemory" classname="LaneFollowerTest" line="133" >    </testcase>
-</testsuite>
-</testsuites>

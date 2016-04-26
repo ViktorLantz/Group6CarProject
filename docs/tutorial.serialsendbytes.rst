@@ -1,1 +1,0 @@
-../tutorials/serialsendbytes/README.rst

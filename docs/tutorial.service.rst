@@ -1,1 +1,0 @@
-../tutorials/service/README.rst

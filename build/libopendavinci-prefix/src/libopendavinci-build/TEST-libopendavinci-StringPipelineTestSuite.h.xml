@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-StringPipelineTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:12 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/StringPipelineTestSuite.h" >
-    <testcase name="testRegisterReceiverBeforeSendingData" classname="StringPipelineTest" line="47" >    </testcase>
-    <testcase name="testRegisterReceiverAfterDataWasSent" classname="StringPipelineTest" line="69" >    </testcase>
-</testsuite>
-</testsuites>

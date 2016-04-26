@@ -1,1 +1,0 @@
-../tutorials/serialreceivebytes/README.rst

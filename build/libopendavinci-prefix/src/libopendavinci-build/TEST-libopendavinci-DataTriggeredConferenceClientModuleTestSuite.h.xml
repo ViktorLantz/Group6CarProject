@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-DataTriggeredConferenceClientModuleTestSuite.h" tests="3" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:45:45 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/DataTriggeredConferenceClientModuleTestSuite.h" >
-    <testcase name="testTimeTriggeredTimeTriggeredConferenceClientModule" classname="DataTriggeredConferenceClientModuleTest" line="266" >    </testcase>
-    <testcase name="testDataTriggeredTimeTriggeredConferenceClientModules" classname="DataTriggeredConferenceClientModuleTest" line="336" >    </testcase>
-    <testcase name="testDataTriggeredTimeTriggeredConferenceClientModulesFreq10" classname="DataTriggeredConferenceClientModuleTest" line="440" >    </testcase>
-</testsuite>
-</testsuites>

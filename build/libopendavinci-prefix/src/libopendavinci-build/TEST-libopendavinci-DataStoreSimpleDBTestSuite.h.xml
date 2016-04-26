@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-DataStoreSimpleDBTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:26 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/DataStoreSimpleDBTestSuite.h" >
-    <testcase name="testDataStore" classname="DataStoreTest" line="208" >    </testcase>
-    <testcase name="testMassData" classname="DataStoreTest" line="229" >    </testcase>
-    <testcase name="testSerializationDeserialization" classname="DataStoreTest" line="274" >    </testcase>
-    <testcase name="testDataStoreForDataExchange" classname="DataStoreTest" line="303" >    </testcase>
-</testsuite>
-</testsuites>

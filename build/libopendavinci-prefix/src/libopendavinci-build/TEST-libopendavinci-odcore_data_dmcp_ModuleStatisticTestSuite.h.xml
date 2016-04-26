@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-odcore_data_dmcp_ModuleStatisticTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:28 2016" file="/home/viktor/OpenDaVINCI/build/libopendavinci-prefix/src/libopendavinci-build/coredata/testsuites/odcore_data_dmcp_ModuleStatisticTestSuite.h" >
-    <testcase name="testCreateObject" classname="odcore_data_dmcp_ModuleStatistic_TestSuite" line="30" >    </testcase>
-    <testcase name="testCreateAndCopyObject" classname="odcore_data_dmcp_ModuleStatistic_TestSuite" line="38" >    </testcase>
-    <testcase name="testCreateAndAssignObject" classname="odcore_data_dmcp_ModuleStatistic_TestSuite" line="53" >    </testcase>
-    <testcase name="testCreateAndSerializeObject" classname="odcore_data_dmcp_ModuleStatistic_TestSuite" line="68" >    </testcase>
-</testsuite>
-</testsuites>

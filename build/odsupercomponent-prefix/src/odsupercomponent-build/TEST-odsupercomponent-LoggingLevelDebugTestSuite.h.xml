@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="odsupercomponent-LoggingLevelDebugTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:56:04 2016" file="/home/viktor/OpenDaVINCI/odsupercomponent/testsuites/LoggingLevelDebugTestSuite.h" >
-    <testcase name="testLogLevelDebug" classname="LoggerTest" line="151" >
-        <system-out ></system-out>
-    </testcase>
-</testsuite>
-</testsuites>

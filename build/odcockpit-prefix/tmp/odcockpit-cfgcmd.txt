@@ -1,1 +1,0 @@
-cmd='/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/usr/local;-DCMAKE_TOOLCHAIN_FILE=/home/viktor/OpenDaVINCI/cmake/default-Toolchain.cmake;-GUnix Makefiles;/home/viktor/OpenDaVINCI/odcockpit'

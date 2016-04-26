@@ -1,1 +1,0 @@
-../tutorials/timetrigger/README.rst

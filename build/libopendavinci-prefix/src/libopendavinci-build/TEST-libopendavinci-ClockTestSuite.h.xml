@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-ClockTestSuite.h" tests="2" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:46:26 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/ClockTestSuite.h" >
-    <testcase name="testClock" classname="ClockTest" line="33" >    </testcase>
-    <testcase name="testCopyClock" classname="ClockTest" line="77" >    </testcase>
-</testsuite>
-</testsuites>

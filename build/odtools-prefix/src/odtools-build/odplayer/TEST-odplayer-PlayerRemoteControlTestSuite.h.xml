@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="odplayer-PlayerRemoteControlTestSuite.h" tests="1" failures="0" errors="0" time="0" timestamp="Fri Apr  1 18:01:42 2016" file="/home/viktor/OpenDaVINCI/odtools/odplayer/testsuites/PlayerRemoteControlTestSuite.h" >
-    <testcase name="testRealtimeReplayNoRewindRemoteControl" classname="PlayerModuleTest" line="123" >    </testcase>
-</testsuite>
-</testsuites>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites>
-<testsuite name="libopendavinci-LCMTestSuite.h" tests="4" failures="0" errors="0" time="0" timestamp="Fri Apr  1 17:44:52 2016" file="/home/viktor/OpenDaVINCI/libopendavinci/testsuites/LCMTestSuite.h" >
-    <testcase name="testSerializationDeserialization" classname="LCMTest" line="256" >    </testcase>
-    <testcase name="testSerializationDeserializationInheritance" classname="LCMTest" line="286" >    </testcase>
-    <testcase name="testSerializationDeserializationFloatingPoint" classname="LCMTest" line="322" >    </testcase>
-    <testcase name="testLcmSerialisation" classname="LCMTest" line="356" >    </testcase>
-</testsuite>
-</testsuites>

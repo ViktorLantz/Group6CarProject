@@ -1,1 +1,0 @@
-../tutorials/udpsendbytes/README.rst

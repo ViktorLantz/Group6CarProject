@@ -1,8 +1,0 @@
-ContouredObjectTestSuite.h-TestSuite 1 0.828781
-EgoStateTestSuite.h-TestSuite 1 0.0184262
-WGS84CoordinateTestSuite.h-TestSuite 1 2.38481
-SceneGraphTestSuite.h-TestSuite 1 0.017801
-PointShapedObjectTestSuite.h-TestSuite 1 0.017818
-ScenarioTestSuite.h-TestSuite 1 0.04004
-SituationTestSuite.h-TestSuite 1 0.030288
----
