@@ -1,1 +1,6 @@
 libcanmessagemapping
+cmake.Modules/
+odCANDataStructureGenerator/
+odcantools/
+CANMessageMapping.can
+cxxtest
