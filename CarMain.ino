@@ -62,6 +62,8 @@ int counter;
 int midPoint;
 double speedVal;
 double steeringVal;
+int defaultSteering = 1500;
+int adjustedSteering = 1105;
 
 
 // A string to hold incoming data
@@ -150,34 +152,55 @@ void loop() {
     //distance("sensor", sensorReading);
     //Serial.print(sensorReading);
 
-    // IR sensor values. Close == High && above 600 is too close to the sensors so it bugsout.
+    // IR sensor values. Low == close && less than ~8 is too close to the sensors so it bugsout.
     IRFrontRight = analogRead(IRSensorFrontRight);
+   convertedIRFrontRight = IRConversion(IRFrontRight);
     //Serial.print(IRFrontRight);
+    
     IRBackRight = analogRead(IRSensorBackRight);
+    convertedIRBackRight = IRConversion(IRBackRight);
     //Serial.print(IRBackRight);
+    
     IRBack = analogRead(IRSensorBack);
+    convertedIRBack = IRConversion(IRBack);
     //Serial.print(IRBack);
 
     outputString = us + frontSensorReading + ',' + frontRightSensorReading + ']' + ir + IRFrontRight + ',' + IRBack + ',' + IRBackRight + ']';
     Serial.print(outputString);
-    Serial.print(inputString);
 
     // ch1 = servo, ch2 = motor, ch3 & ch4 = encoder
     ch1 = pulseIn(3, HIGH);
     ch2 = pulseIn(5, HIGH);
     //ch3 = digitalRead(12);
     //ch4 = digitalRead(13);
+    Serial.print("This is channel 1:");
+    Serial.println(ch1);
 
     myServo.writeMicroseconds(1105);
     myMotor.writeMicroseconds(1500);
 
-    // Turn Right 1400
+    // If ch1 decreases turn left by increasing the value of alteredSteering to approx 1400
     if (ch1 < 1450 && ch1 > 500) {
-      myServo.writeMicroseconds(1400);
+      int toSteer = defaultSteering - ch1;
+      adjustedSteering = adjustedSteering + toSteer + 100;
+      Serial.print("Value of adjustedSteering: ");
+      Serial.println(adjustedSteering);
+      Serial.print("Value of toSteer: ");
+      Serial.println(toSteer);
+      myServo.writeMicroseconds(adjustedSteering);
+      adjustedSteering = 1105;
+      
     }
-    // Turn Left 800
+    // If ch1 increases turn right by decreasing the value of alteredSteering to approx 800
     if (ch1 > 1560) {
-      myServo.writeMicroseconds(800);
+      int toSteer = ch1 - defaultSteering;
+      adjustedSteering = adjustedSteering - toSteer -50;
+      Serial.print("Value of adjustedSteering: ");
+      Serial.println(adjustedSteering);
+      Serial.print("Value of toSteer: ");
+      Serial.println(toSteer);
+      myServo.writeMicroseconds(adjustedSteering);
+      adjustedSteering = 1105;
 
     }
     // Drive Forward
@@ -222,23 +245,18 @@ void loop() {
     // Out the actual value from the sensors.
 
     int frontSensorReading = USFront.getRange(unit);
-    //distance("sensor", sensorReading);
     //Serial.print(frontSensorReading);
     int frontRightSensorReading = USFrontRight.getRange(unit);
-    //distance("sensor", sensorReading);
     //Serial.print(frontRightSensorReading);
 
-    // IR sensor values. Close == High && above 600 is too close to the sensors so it bugsout.
+    // IR sensor values. Low == close && less than ~8 is too close to the sensors so it bugsout.
     IRFrontRight = analogRead(IRSensorFrontRight);
-    //CHECK IF CONVERSION WORKS
     convertedIRFrontRight = IRConversion(IRFrontRight);
-    
+   
     IRBackRight = analogRead(IRSensorBackRight);
-    //CHECK IF CONVERSION WORKS
     convertedIRBackRight = IRConversion(IRBackRight);
     
     IRBack = analogRead(IRSensorBack);
-    //CHECK IF CONVERSION WORKS
     convertedIRBack = IRConversion(IRBack);
     
     outputString = us + frontSensorReading + ',' + frontRightSensorReading + ']' + ir + convertedIRFrontRight + ',' + convertedIRBack + ',' + convertedIRBackRight + ']';
@@ -341,14 +359,10 @@ void stopAll() {
   flag = 1;
 }
 
-//CHECK IF THIS FUNCTION WORKS
 int IRConversion(int value){
     int convertedValue;
-
     convertedValue = (2914/value+5)-1;
-
-    return convertedValue;
-     
+    return convertedValue;    
 }
 
 // Print out distance
