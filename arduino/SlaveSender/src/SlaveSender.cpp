@@ -15,9 +15,19 @@ void setup() {
   Wire.onRequest(requestEvent);
   Serial.begin(9600);
   attachInterrupt(digitalPinToInterrupt(7), tick, FALLING);
+
+  while (true) {
+    Serial.println("SETUP_RUNNING");
+  }
 }
 
+/**
+ * Loop calculates the ticks received by encoder
+ * to rpm and velocity within 1sec (1000ms).
+ * @method loop
+ */
 void loop() {
+  Serial.println("LOOP_RUNNING");
   currentMillis = millis();
 
   if (currentMillis - previousMillis >= 1000) {
@@ -32,10 +42,18 @@ void loop() {
   }
 }
 
+/**
+ * Triggered when MasterReceiver requests package.
+ * @method requestEvent
+ */
 void requestEvent() {
   Wire.write(velocity);
 }
 
+/**
+ * Triggered on interrupt when a signal is received.
+ * @method tick
+ */
 void tick() {
   tickCount++;
 }
