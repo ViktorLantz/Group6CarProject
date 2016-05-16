@@ -33,7 +33,6 @@
 
 #include "opendavinci/GeneratedHeaders_OpenDaVINCI.h"
 #include "automotivedata/GeneratedHeaders_AutomotiveData.h"
-
 #include "LaneDetector.h"
 
 using namespace cv;
@@ -50,6 +49,9 @@ namespace automotive {
         using namespace odtools::player;
         using namespace automotive;
         using namespace automotive::miniature;
+        bool stop = false;
+        int loopCount = 0;
+
 
         LaneDetector::LaneDetector(const int32_t &argc, char **argv) :
             TimeTriggeredConferenceClientModule(argc, argv, "LaneDetector"),
@@ -108,7 +110,7 @@ namespace automotive {
 			        }
 
 			        // Mirror the image.
-			        cvFlip(m_image, 0, -1);
+			        //cvFlip(m_image, 0, -1);
 
 			        retVal = true;
 		        }
@@ -119,71 +121,33 @@ namespace automotive {
         // This method is called to process an image described by the SharedImage data structure.
         void LaneDetector::processImage() {
             // Example: Show the image.
-            Mat img, img_edge;
-            int difTot = 0, count = 0;
-
+            
             if (m_debug) {
-           
-            img = m_image;
-  			int32_t img_width, img_height;	
-  			int dif;
+
+  			int32_t img_width, img_height;
+  			int dif ;
 
   			// Get the width and height of the image
   			img_width = m_image->width;
   			img_height = m_image->height;
 
-  			// GaussianBlur( img, img, Size(3,3), 0, 0, BORDER_DEFAULT );
-  			// //cvtColor(img, img_gray, COLOR_BGR2GRAY);
-  			// Canny(img , img_edge, 40, 100, 3);
   			IplImage *singChannel = cvCreateImage(cvSize(img_width, img_height), IPL_DEPTH_8U, 1);
   			cvCvtColor(m_image, singChannel, COLOR_BGR2GRAY);
   			cvSmooth(singChannel, singChannel, CV_GAUSSIAN, 3, 3);
-  			cvCanny(singChannel , singChannel, 40, 100, 3);
+  			cvCanny(singChannel , singChannel, 50, 200, 3);
   			cvMerge(singChannel,singChannel,singChannel,NULL,m_image);
-
-  			vector<Vec2f> lines;
-
-
-  	 		// Configured for image 500 pixels wide
-			// HoughLines(img_edge, lines, 1, CV_PI/180, 60, 0, 0 );
-
-			//   for( size_t i = 0; i < lines.size(); i++ )
-			//     {
-			//        float rho = lines[i][0], theta = lines[i][1];
-			//        Point pt1, pt2;
-			//        double a = cos(theta), b = sin(theta);
-			//        double x0 = a*rho, y0 = b*rho;
-			//        pt1.x = cvRound(x0 + 1000*(-b));           
-			//        pt1.y = cvRound(y0 + 1000*(a));            
-			//        pt2.x = cvRound(x0 - 1000*(-b));
-			//        pt2.y = cvRound(y0 - 1000*(a));
-			//        cvLine( m_image, pt1, pt2, Scalar(255,0,0), 1, 8);
-			//     }
-
-
-				// IplImage* out = cvCreateImage( cvGetSize(m_image), IPL_DEPTH_8U, 3 );
-				// IplImage* gray_out = cvCreateImage( cvGetSize(m_image), IPL_DEPTH_8U, 1 );
-				// IplImage* canny_out = cvCreateImage( cvGetSize(m_image), IPL_DEPTH_8U, 1 );
-				// cvSmooth( m_image, out, CV_GAUSSIAN, 11, 11 );
-				// cvCvtColor(out , gray_out, CV_RGB2GRAY);
-				// cvCanny( gray_out, canny_out, 10, 10, 3 );
-			
-            
 
 if (m_image != NULL){
 
   // Scan the image at different heights
-  
   for(int y = img_height/6 * 4; y < img_height - 90; y += 5) {
       // Scan from middle to right
-      // start at the middle pixel and compare the colour until a blue pixel is found i.e. a hough line
+      // start at the middle pixel and compare the colour until a white pixel is found
       CvScalar pixelRightCol;
       Point right;
       right.x = -1;
       right.y = y;
       for(int x = img_width/2; x < img_width; x++) {
-          //pixelRightCol = cvGet2D(src, x, y);
-          // Check to see if a blue pixel has been found
       	  pixelRightCol = cvGet2D(m_image, y, x);
           if(pixelRightCol.val[0] >= 200) {
               right.x = x;                    // set the x coordinate to the value where a blue pixel was detected
@@ -196,9 +160,7 @@ if (m_image != NULL){
       Point left;
       left.x = -1;
       left.y = y;
-      for(int x = img_width/2; x > 0; x--) {
-        //pixelLeftCol = src.at<cv::Vec3b>>(y, x);
-        // Check if colour of pixel is blue
+      for (int x = img_width/2; x > 0; x--) {
         pixelLeftCol = cvGet2D(m_image, y, x);
         if(pixelLeftCol.val[0] >= 200) {
           left.x = x;
@@ -213,74 +175,85 @@ if (m_image != NULL){
     if(right.x > 0) {
       cvLine(m_image, Point(img_width/2, y), right, Scalar(0, 0, 255), 1, 8);    // draw a red line from middle to right
     }
-
     // Calculate differences between right and left lines
     dif = (right.x - img_width/2) - (img_width/2 - left.x);
-    
-    
-
-    /*
-     *    Could calculate average of dif values to determine how off-centre car is
-     *    and then adjust the wheel angles etc. depending on this
-     *    positive --> further on the left side, negative --> right side
-     *
-     */
-
-    difTot += dif;
-    count ++;
   }
 
- //imshow("source", m_image);
+   //DETETCT THE WHITE LINE BEFORE THE INTERSECTION
+   for(int yU = img_height/6 * 5; yU < img_height -75; yU += 5) {
+
+      CvScalar pixelRightCol2;
+      int countWhite = 0;
+      for(int i = img_width/2 - 60; i < img_width/2 + 60; i++) {
+        pixelRightCol2 = cvGet2D(m_image, yU, i);
+        if(pixelRightCol2.val[0] >= 200) {
+          countWhite++;
+        }
+      }
+
+     if(countWhite > 20) {
+        cvLine(m_image, Point(img_width/2 -5, yU), Point(img_width/2 + 5, yU), Scalar(255, 0, 255), 1, 8);
+        cout <<"Horizontal lane"<<endl;
+        stop = false;
+    }
+  }
+
   	if (m_image != NULL) {
                      cvShowImage("Camera Feed Image", m_image);
                      cvWaitKey(10);
                 }
 
-            // 1. Do something with the image m_image here, for example: find lane marking features, optimize quality, ...
+		int avg = dif;
+		cout <<"Dif is: "<<avg<<endl;
+		int steer = 0;
+      	int speed;
+     //WE ARE NOT USING THIS PART //NOT ENOUGH TIME TO IMPLEMENT CORRECTLY====
+      if (!stop){
+       speed = 1;
+       cout <<"Going!"<<endl;
+       cout <<"The speed is: "<<speed<<endl;
+      }
+      else {
+        speed = 2;
+        if(stop == true && loopCount < 300){
+          loopCount++;
+        }else{
+          stop = false;
+          loopCount = 0;
+        }
+        cout <<"Stopping!"<<endl;
+        cout <<"The speed is: "<<speed<<endl;
+      }//======================================================================
 
-
-
-            // 2. Calculate desired steering commands from the image features.
-
-            //Avg for going forward in the middle of the lane (Ranging from -8 to -76)
-
-			int avg = difTot / count;
-			cout <<"Average Dif is: "<<avg<<endl;
-			int steer = 0;
-
-
-			if((avg < 6 && avg > -29) || (avg < -31 && avg > -89) || (avg < -91 && avg > -168) || (avg < -270 && avg > -290) || (avg < -200 && avg > - 263)){
-			 	steer = 0;
-			 	cout <<"Middle of road!!"<<endl;
-			  } 
-			else if(( avg > 10 && avg < 150) || (avg < -350 && avg > -390)){
-			  	steer = 1;
-			    cout <<"Turn Right !!"<<endl;
-			  }
-		  	else if((avg < -170 && avg > - 202) || (avg < -255 && avg > - 272)){
-			  	steer = -1;
-			  	cout <<"Turn Left !!"<<endl;
-			  }			  
-			else if(avg < -500 && avg > -643){
-			 	steer = 0;
+      if(avg < -590)
+			  {
+			 	steer = 5;
 			 	cout <<"Forward through the black void!!"<<endl;
 			  }
 
-            Container s(m_vehicleControl);
-            m_vehicleControl.setSpeed(2);
+			  else if(avg < -10 && avg > -35)
+			  {
+			 	steer = 5;
+			 	cout <<"Middle of road!!"<<endl;
+			  }
+
+			  else if(avg > 100 || avg < -321)
+			  {
+			  	steer = 1;
+			    cout <<"Turn Right !!"<<endl;
+			  }
+
+			  else if(avg < -120)
+			  {
+			  	steer = -1;
+			  	cout <<"Turn Left !!"<<endl;
+			  }
+
+            m_vehicleControl.setSpeed(speed);
             m_vehicleControl.setSteeringWheelAngle(steer);
-
-            // Here, you see an example of how to send the data structure SteeringData to the ContainerConference.
-            // This data structure will be received by all running components. In our example, it will be processed
-            // by a potential component to "drive" the car.
-            //SteeringData sd;
-            //sd.setExampleData(1234.56);
-
-            // Create container for finally sending the data.
-            //Container c(sd);
-            // Send container.
+            Container s(m_vehicleControl);
             getConference().send(s);
-       } 
+       }
     }
 }
         // This method will do the main data processing job.
