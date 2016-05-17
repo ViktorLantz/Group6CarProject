@@ -19,13 +19,17 @@
 
 #ifndef LANEDETECTOR_H_
 #define LANEDETECTOR_H_
-
+ 
 #include <opencv/cv.h>
-
+ 
 #include <memory>
 #include "opendavinci/odcore/base/module/TimeTriggeredConferenceClientModule.h"
+#include "opendavinci/odcore/data/TimeStamp.h"
 #include "opendavinci/odcore/wrapper/SharedMemory.h"
-
+ 
+#include "automotivedata/GeneratedHeaders_AutomotiveData.h"
+#include "opendavinci/GeneratedHeaders_OpenDaVINCI.h"
+ 
 namespace automotive {
     namespace miniature {
 
@@ -81,13 +85,16 @@ namespace automotive {
 	            bool m_hasAttachedToSharedImageMemory;
 	            std::shared_ptr<odcore::wrapper::SharedMemory> m_sharedImageMemory;
 	            IplImage *m_image;
+                
                 bool m_debug;
+
+                automotive::VehicleControl m_vehicleControl;
 
 	            virtual void setUp();
 
 	            virtual void tearDown();
 
-                void processImage();
+                    void processImage();
         };
 
     } // miniature

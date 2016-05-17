@@ -49,8 +49,8 @@ namespace automotive {
         using namespace odtools::player;
         using namespace automotive;
         using namespace automotive::miniature;
-        bool stop = false;
-        int loopCount = 0;
+        bool stop = false; //boolean used for stoping the car
+        int loopCount = 0; //int used for the timer (used at the intersection)
 
 
         LaneDetector::LaneDetector(const int32_t &argc, char **argv) :
@@ -120,7 +120,6 @@ namespace automotive {
 
         // This method is called to process an image described by the SharedImage data structure.
         void LaneDetector::processImage() {
-            // Example: Show the image.
 
             if (m_debug) {
   			int32_t img_width, img_height;
@@ -129,16 +128,23 @@ namespace automotive {
   			// Get the width and height of the image
   			img_width = m_image->width;
   			img_height = m_image->height;
-
+        
+        //Create a single chanel matrix 
   			IplImage *singChannel = cvCreateImage(cvSize(img_width, img_height), IPL_DEPTH_8U, 1);
-  			cvCvtColor(m_image, singChannel, COLOR_BGR2GRAY);
+  			// and apply filters to that channel
+        cvCvtColor(m_image, singChannel, COLOR_BGR2GRAY);
   			cvSmooth(singChannel, singChannel, CV_GAUSSIAN, 3, 3);
   			cvCanny(singChannel , singChannel, 50, 200, 3);
+        // merge the single channel matrix three times and display it through m_image so that we will have no clashes
+        // between our camera/OpenCV and our code.
   			cvMerge(singChannel,singChannel,singChannel,NULL,m_image);
 
 if (m_image != NULL){
 
   // Scan the image at different heights
+
+  //THIS ALGORITHM WAS TAKEN FROM LaneFollower.cpp AND WAS IMPLEMENTED ACCORDING TO OUR CODE
+  //ALL CREDITS GO TO Christian Berger
   for(int y = img_height/6 * 4; y < img_height - 90; y += 5) {
       // Scan from middle to right
       // start at the middle pixel and compare the colour until a white pixel is found
@@ -149,12 +155,12 @@ if (m_image != NULL){
       for(int x = img_width/2; x < img_width; x++) {
       	  pixelRightCol = cvGet2D(m_image, y, x);
           if(pixelRightCol.val[0] >= 200) {
-              right.x = x;                    // set the x coordinate to the value where a blue pixel was detected
+              right.x = x;                    // set the x coordinate to the value where a white pixel was detected
               break;
           }
       }
 
-      // Scan from middle to left
+      // Do the same but from middle to left
       CvScalar pixelLeftCol;
       Point left;
       left.x = -1;
@@ -168,9 +174,15 @@ if (m_image != NULL){
       }
 
     // If a the lane lines are detected, draw from the middle to that line
+
+    //THIS ALGORITHM WAS TAKEN FROM LaneFollower.cpp AND WAS IMPLEMENTED ACCORDING TO OUR CODE
+    //ALL CREDITS GO TO Christian Berger 
     if(left.x > 0) {
       cvLine(m_image, Point(img_width/2, y), left, Scalar(0, 255, 0), 1, 8);     // draw a green line from the middle to left point
     }
+
+    //THIS ALGORITHM WAS TAKEN FROM LaneFollower.cpp AND WAS IMPLEMENTED ACCORDING TO OUR CODE
+    //ALL CREDITS GO TO Christian Berger
     if(right.x > 0) {
       cvLine(m_image, Point(img_width/2, y), right, Scalar(0, 0, 255), 1, 8);    // draw a red line from middle to right
     }
@@ -179,6 +191,9 @@ if (m_image != NULL){
   }
 
    //DETETCT THE WHITE LINE BEFORE THE INTERSECTION
+
+   //THIS ALGORITHM WAS TAKEN FROM LaneFollower.cpp AND WAS IMPLEMENTED ACCORDING TO OUR CODE
+   //ALL CREDITS GO TO Christian Berger
    for(int yU = img_height/6 * 5; yU < img_height -70; yU += 2) {
     
       CvScalar pixelRightCol2;
@@ -189,7 +204,9 @@ if (m_image != NULL){
           countWhite++;
         }
       }
-
+      
+     //THIS ALGORITHM WAS TAKEN FROM LaneFollower.cpp AND WAS IMPLEMENTED ACCORDING TO OUR CODE
+     //ALL CREDITS GO TO Christian Berger
      if(countWhite > 1) {
         cvLine(m_image, Point(img_width/2 -30, yU), Point(img_width/2 + 30, yU), Scalar(255, 0, 255), 1, 8);
         cout <<"Horizontal lane"<<endl;
