@@ -39,21 +39,22 @@
 
 #include "OpenCVCamera.h"
 
-#ifdef HAVE_UEYE
-    #include "uEyeCamera.h"
-#endif
+//#ifdef HAVE_UEYE
+  //  #include "uEyeCamera.h"
+//#endif
 
 #include "Proxy.h"
 #include "SerialReceiveBytes.hpp"
 
+//  << MODIFIED >>
+SerialReceiveBytes receiveHandler;
 namespace automotive {
     namespace miniature {
-
         using namespace std;
         using namespace odcore::base;
         using namespace odcore::data;
         using namespace odtools::recorder;
-	using namespace odcore::wrapper;
+        using namespace odcore::wrapper;
 
 
         Proxy::Proxy(const int32_t &argc, char **argv) :
@@ -65,8 +66,6 @@ namespace automotive {
 
         Proxy::~Proxy() {
         }
-
-	SerialReceiveBytes receiveHandler;
 
         void Proxy::setUp() {
 
@@ -81,38 +80,38 @@ namespace automotive {
             KeyValueConfiguration kv = getKeyValueConfiguration();
 
             // Create built-in recorder.
-            const bool useRecorder = kv.getValue<uint32_t>("proxy.useRecorder") == 1;
+            const bool useRecorder = kv.getValue <uint32_t> ("proxy.useRecorder") == 1;
             if (useRecorder) {
                 // URL for storing containers.
                 stringstream recordingURL;
                 recordingURL << "file://" << "proxy_" << TimeStamp().getYYYYMMDD_HHMMSS() << ".rec";
                 // Size of memory segments.
-                const uint32_t MEMORY_SEGMENT_SIZE = getKeyValueConfiguration().getValue<uint32_t>("global.buffer.memorySegmentSize");
+                const uint32_t MEMORY_SEGMENT_SIZE = getKeyValueConfiguration().getValue <uint32_t> ("global.buffer.memorySegmentSize");
                 // Number of memory segments.
-                const uint32_t NUMBER_OF_SEGMENTS = getKeyValueConfiguration().getValue<uint32_t>("global.buffer.numberOfMemorySegments");
+                const uint32_t NUMBER_OF_SEGMENTS = getKeyValueConfiguration().getValue <uint32_t> ("global.buffer.numberOfMemorySegments");
                 // Run recorder in asynchronous mode to allow real-time recording in background.
                 const bool THREADING = true;
                 // Dump shared images and shared data?
-                const bool DUMP_SHARED_DATA = getKeyValueConfiguration().getValue<uint32_t>("proxy.recorder.dumpshareddata") == 1;
+                const bool DUMP_SHARED_DATA = getKeyValueConfiguration().getValue <uint32_t> ("proxy.recorder.dumpshareddata") == 1;
 
-                m_recorder = unique_ptr<Recorder>(new Recorder(recordingURL.str(), MEMORY_SEGMENT_SIZE, NUMBER_OF_SEGMENTS, THREADING, DUMP_SHARED_DATA));
+                m_recorder = unique_ptr <Recorder> (new Recorder(recordingURL.str(), MEMORY_SEGMENT_SIZE, NUMBER_OF_SEGMENTS, THREADING, DUMP_SHARED_DATA));
             }
 
             // Create the camera grabber.
-            const string NAME = getKeyValueConfiguration().getValue<string>("proxy.camera.name");
-            string TYPE = getKeyValueConfiguration().getValue<string>("proxy.camera.type");
+            const string NAME = getKeyValueConfiguration().getValue <string> ("proxy.camera.name");
+            string TYPE = getKeyValueConfiguration().getValue <string> ("proxy.camera.type");
             std::transform(TYPE.begin(), TYPE.end(), TYPE.begin(), ::tolower);
-            const uint32_t ID = getKeyValueConfiguration().getValue<uint32_t>("proxy.camera.id");
-            const uint32_t WIDTH = getKeyValueConfiguration().getValue<uint32_t>("proxy.camera.width");
-            const uint32_t HEIGHT = getKeyValueConfiguration().getValue<uint32_t>("proxy.camera.height");
-            const uint32_t BPP = getKeyValueConfiguration().getValue<uint32_t>("proxy.camera.bpp");
+            const uint32_t ID = getKeyValueConfiguration().getValue <uint32_t> ("proxy.camera.id");
+            const uint32_t WIDTH = getKeyValueConfiguration().getValue <uint32_t> ("proxy.camera.width");
+            const uint32_t HEIGHT = getKeyValueConfiguration().getValue <uint32_t> ("proxy.camera.height");
+            const uint32_t BPP = getKeyValueConfiguration().getValue <uint32_t> ("proxy.camera.bpp");
 
             if (TYPE.compare("opencv") == 0) {
-                m_camera = unique_ptr<Camera>(new OpenCVCamera(NAME, ID, WIDTH, HEIGHT, BPP));
+                m_camera = unique_ptr <Camera> (new OpenCVCamera(NAME, ID, WIDTH, HEIGHT, BPP));
             }
             if (TYPE.compare("ueye") == 0) {
 #ifdef HAVE_UEYE
-                m_camera = unique_ptr<Camera>(new uEyeCamera(NAME, ID, WIDTH, HEIGHT, BPP));
+                m_camera = unique_ptr <Camera> (new uEyeCamera(NAME, ID, WIDTH, HEIGHT, BPP));
 #endif
             }
 
@@ -137,26 +136,26 @@ namespace automotive {
             getConference().send(c);
         }
 
+
+        //  << MODIFIED >>
+
         // This method will do the main data processing job.
         odcore::data::dmcp::ModuleExitCodeMessage::ModuleExitCode Proxy::body() {
 
             uint32_t captureCounter = 0;
-
-            //Modified
+            uint32_t sendCounter = 0;
 
             //Define Serial port connection for Arduino
-            const string SERIAL_PORT = "/dev/ttyACM0";
+            const string SERIAL_PORT = "/dev/ttyACM1";
             //Define BAUD_Rate for serial connection
             const uint32_t BAUD_RATE = 9600;
             // Create connection to the serail port
-            std::shared_ptr<SerialPort>serial(SerialPortFactory::createSerialPort(SERIAL_PORT, BAUD_RATE));
+            std::shared_ptr <SerialPort> serial(SerialPortFactory::createSerialPort(SERIAL_PORT, BAUD_RATE));
             // Link connection to the handler
             serial->setStringListener(&receiveHandler);
             // Start listening for the data on the serial port.
             serial->start();
-            
-            
-            //Modified
+
 
             while (getModuleStateAndWaitForRemainingTimeInTimeslice() == odcore::data::dmcp::ModuleStateMessage::RUNNING) {
                 // Capture frame.
@@ -167,26 +166,24 @@ namespace automotive {
                     distribute(c);
                     captureCounter++;
                 }
-		//Get US and IR data
-		/*
-		TODO:
-		      change from ints to doubles? In serial (Show the error)
 
-		*/
-
+                //Get US and IR data
                 uint32_t numOfSensors = 5;
-                captureCounter++;
+                sendCounter++;
 
+                //Create Vehicle control object
                 Container containerControlData = getKeyValueDataStore().get(automotive::VehicleControl::ID());
-                VehicleControl vc = containerControlData.getData<VehicleControl> ();
+                VehicleControl vc = containerControlData.getData <VehicleControl> ();
 
+                //Retrieve the speed and steeringwheelangle values
                 double speedVal = vc.getSpeed();
                 double steeringVal = vc.getSteeringWheelAngle();
 
 
                 //cout << "Value of Speed :" << speedVal << endl;
                 //cout << "Value of Steering :" << steeringVal << endl;
-                // IF WE WANT TO SEND THE VALUES AS STRING USE THIS
+
+                // Convert the double values into string values for sending to LLB
                 stringstream steering_str;
                 stringstream speed_str;
 
@@ -196,60 +193,48 @@ namespace automotive {
                 string speedString = speed_str.str();
                 string steeringString = steering_str.str();
 
-                //cout << "PING_A!" << endl;
-                string str_a = "aff\n";
-                
-
-
-                //cout << "PING_2A!" << endl;
-                if(captureCounter>200){
-
+                // Ensure that the serial -> send is not carried out until the setup has succesfully finished
+                if (sendCounter > 200) {
                     serial->send("{" + speedString + "," + steeringString + "}");
                 }
-                /*
-                if(steeringVal == 0){
-                    //Make the car turn straight
-                    //steeringSend = 1105 (Neutral value to send)
-                } else if(steeringVal > 0){
-                    //Make the car turn right
 
-                } else if(steeringVal < 0){
-                    //Make the car turn left
+                // Retrieve the us and the ir vectors from SerialReceiveBytes
+                vector <int> usVector = receiveHandler.getUSVector();
+                vector <int> irVector = receiveHandler.getIRVector();
 
+                // Create map of unsigned integer & the values of the sensors
+                map <uint32_t, double> values;
+
+                // Insert the values from the ultrasonic vector into the map
+                for(int i = 0; i < 2; i++) {
+                 if(usVector[i] > 50){
+                       values[i+3] = -1;
+                   }else{
+                       values[i+3] = usVector[i];
+                   }
                 }
-*/
+                // Insert the values from the infrared into the map
+                for(int i = 0; i < 3; i++) {
+                  if(irVector[i] > 60){
+                       values[i] = -1;
+                   }else{
+                       values[i] = irVector[i];
+                   }
+               }
 
-                vector<int> usVector = receiveHandler.getUSVector();
-                vector<int> irVector = receiveHandler.getIRVector();
-                //string test_string = receiveHandler.getString();
-                //cout << "PING " << test_string << endl;
-
-
-                map<uint32_t, double> values;
-
-                /*for(int i = 0; i < 2; i++){
-                    cout << "Values of US: " << usVector[i] << endl;
-                    values[i+3] = usVector[i];
-                }
-                for(int i = 0; i < 3; i++){
-                    cout << "Values of IR: " << irVector[i] << endl;
-                    values[i] = irVector[i];
-                }*/
-
+                // Create sensor board & the container and insert the values
+                // Then send the data
                 SensorBoardData sensorBoard(numOfSensors, values);
 
                 Container sensorContainer(sensorBoard);
                 distribute(sensorContainer);
-                
-                //serial->send("a");
-
     	    }
-	//Modified
-	// Stop listening to the serial port
-	serial->stop();
+
+        // Stop listening to the serial port
+        serial->stop();
         serial->setStringListener(NULL);
-        //Modified
-	cout << "Proxy: Captured " << captureCounter << " frames." << endl;
+
+        cout << "Proxy: Captured " << captureCounter << " frames." << endl;
 
         return odcore::data::dmcp::ModuleExitCodeMessage::OKAY;
         }
