@@ -1,5 +1,7 @@
 /**
- * boxparker - Sample application for realizing a box parking car.
+ * driver is an example application to demonstrate how to 
+ *         generate driving commands from an application realized
+ *         with OpenDaVINCI
  * Copyright (C) 2012 - 2015 Christian Berger
  *
  * This program is free software; you can redistribute it and/or
@@ -17,13 +19,13 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#ifndef BOXPARKERTESTSUITE_H_
-#define BOXPARKERTESTSUITE_H_
+#ifndef PARKERTESTSUITE_H_
+#define PARKERTESTSUITE_H_
 
 #include "cxxtest/TestSuite.h"
 
 // Include local header files.
-#include "../include/BoxParker.h"
+#include "../include/Parker.h"
 
 using namespace std;
 using namespace odcore::data;
@@ -32,23 +34,23 @@ using namespace automotive::miniature;
 /**
  * This class derives from SensorBoard to allow access to protected methods.
  */
-class BoxParkerTestling : public BoxParker {
+class ParkerTestling : public Parker {
     private:
-        BoxParkerTestling();
+        ParkerTestling();
     
     public:
-        BoxParkerTestling(const int32_t &argc, char **argv) :
-            BoxParker(argc, argv) {}
+        ParkerTestling(const int32_t &argc, char **argv) :
+            Parker(argc, argv) {}
 
-        // Here, you need to add all methods which are protected in BoxParker and which are needed for the test cases.
+        // Here, you need to add all methods which are protected in Parker and which are needed for the test cases.
 };
 
 /**
  * The actual testsuite starts here.
  */
-class BoxParkerTest : public CxxTest::TestSuite {
+class ParkerTest : public CxxTest::TestSuite {
     private:
-        BoxParkerTestling *dt;
+        ParkerTestling *dt;
 
     public:
         /**
@@ -56,7 +58,7 @@ class BoxParkerTest : public CxxTest::TestSuite {
          */
         void setUp() {
             // Prepare the data that would be available from commandline.
-            string argv0("boxparker");
+            string argv0("driver");
             string argv1("--cid=100");
             int32_t argc = 2;
             char **argv;
@@ -65,7 +67,7 @@ class BoxParkerTest : public CxxTest::TestSuite {
             argv[1] = const_cast<char*>(argv1.c_str());
 
             // Create an instance of sensorboard through SensorBoardTestling which will be deleted in tearDown().
-            dt = new BoxParkerTestling(argc, argv);
+            dt = new ParkerTestling(argc, argv);
         }
 
         /**
@@ -80,7 +82,7 @@ class BoxParkerTest : public CxxTest::TestSuite {
         // Below this line the actual testcases are defined.
         ////////////////////////////////////////////////////////////////////////////////////
 
-        void testBoxParkerSuccessfullyCreated() {
+        void testParkerSuccessfullyCreated() {
             TS_ASSERT(dt != NULL);
         }
 
@@ -95,7 +97,7 @@ class BoxParkerTest : public CxxTest::TestSuite {
         /**
          * This constructor is only necessary to initialize the pointer variable.
          */
-        BoxParkerTest() : dt(NULL) {}
+        ParkerTest() : dt(NULL) {}
 
     private:
         /**
@@ -105,7 +107,7 @@ class BoxParkerTest : public CxxTest::TestSuite {
          *
          * @param obj Reference to an object of this class.
          */
-        BoxParkerTest(const BoxParkerTest &/*obj*/);
+        ParkerTest(const ParkerTest &/*obj*/);
 
         /**
          * "Forbidden" assignment operator. Goal: The compiler should warn
@@ -115,9 +117,9 @@ class BoxParkerTest : public CxxTest::TestSuite {
          * @param obj Reference to an object of this class.
          * @return Reference to this instance.
          */
-        BoxParkerTest& operator=(const BoxParkerTest &/*obj*/);
+        ParkerTest& operator=(const ParkerTest &/*obj*/);
 
 };
 
-#endif /*BOXPARKERTESTSUITE_H_*/
+#endif /*PARKERTESTSUITE_H_*/
 

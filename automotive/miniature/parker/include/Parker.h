@@ -1,5 +1,7 @@
 /**
- * boxparker - Sample application for realizing a box parking car.
+ * Parker is an example application to demonstrate how to 
+ *         generate parking commands from an application realized
+ *         with OpenDaVINCI
  * Copyright (C) 2012 - 2015 Christian Berger
  *
  * This program is free software; you can redistribute it and/or
@@ -17,8 +19,8 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#ifndef BOXPARKER_H_
-#define BOXPARKER_H_
+#ifndef PARKER_H_
+#define PARKER_H_
 
 #include <vector>
 
@@ -30,10 +32,9 @@ namespace automotive {
         using namespace std;
 
         /**
-         * This class is an example demonstrating how to park a simulated vehicle
-         * using OpenDaVINCI's driving dynamics simulation.
+         * This class is a skeleton to send driving commands to Hesperia-light's vehicle driving 	dynamics simulation.
          */
-        class BoxParker : public odcore::base::module::TimeTriggeredConferenceClientModule {
+        class Parker : public odcore::base::module::TimeTriggeredConferenceClientModule {
             private:
                 /**
                  * "Forbidden" copy constructor. Goal: The compiler should warn
@@ -42,7 +43,7 @@ namespace automotive {
                  *
                  * @param obj Reference to an object of this class.
                  */
-                BoxParker(const BoxParker &/*obj*/);
+                Parker(const Parker &/*obj*/);
 
                 /**
                  * "Forbidden" assignment operator. Goal: The compiler should warn
@@ -52,7 +53,7 @@ namespace automotive {
                  * @param obj Reference to an object of this class.
                  * @return Reference to this instance.
                  */
-                BoxParker& operator=(const BoxParker &/*obj*/);
+                Parker& operator=(const Parker &/*obj*/);
 
             public:
                 /**
@@ -61,29 +62,32 @@ namespace automotive {
                  * @param argc Number of command line arguments.
                  * @param argv Command line arguments.
                  */
-                BoxParker(const int32_t &argc, char **argv);
+                Parker(const int32_t &argc, char **argv);
 
-                virtual ~BoxParker();
+                virtual ~Parker();
 
                 odcore::data::dmcp::ModuleExitCodeMessage::ModuleExitCode body();
-
-                /**
+		
+		/**
                  * This method returns the gaps found during the parking process.
                  *
                  * return Gaps found during the parking process.
                  */
                 vector<double> getFoundGaps() const;
 
+		
+	
             private:
                 virtual void setUp();
 
                 virtual void tearDown();
+		
+	    private:
+		vector<double> m_foundGaps;
 
-            private:
-                vector<double> m_foundGaps;
         };
 
-    } // miniature
-} // automotive
+    }
+} // automotive::miniature
 
-#endif /*BOXPARKER_H_*/
+#endif /*PARKER_H_*/

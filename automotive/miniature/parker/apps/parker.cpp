@@ -1,5 +1,7 @@
 /**
- * boxparker - Sample application for realizing a box parking car.
+ * parker is an example application to demonstrate how to 
+ *         generate driving commands from an application realized
+ *         with OpenDaVINCI
  * Copyright (C) 2012 - 2015 Christian Berger
  *
  * This program is free software; you can redistribute it and/or
@@ -17,9 +19,9 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-#include "BoxParker.h"
+#include "Parker.h"
 
 int32_t main(int32_t argc, char **argv) {
-    automotive::miniature::BoxParker bp(argc, argv);
-    return bp.runModule();
+    automotive::miniature::Parker d(argc, argv);
+    return d.runModule();
 }
