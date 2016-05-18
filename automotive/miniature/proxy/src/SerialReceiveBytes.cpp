@@ -50,8 +50,6 @@ void SerialReceiveBytes::nextString(const string &str) {
 
   std::string u_str("u");
   std::string i_str("i");
-  std::string cbracket("{");
-  std::string cebracket("}");
   std::string startSQ_str("[");
   std::string endSQ_str("]");
 
@@ -63,7 +61,7 @@ void SerialReceiveBytes::nextString(const string &str) {
   while (buffer_container.find(startSQ_str) != string::npos && buffer_container.find(endSQ_str) != string::npos) {
     std::size_t sq_bracket = buffer_container.find(endSQ_str);
 
-    // Extracts the package starting from identifier to the value before last delimiter.
+    // Extracts the package into sub_str, starting from the identifier to the value before last delimiter.
     if (buffer_container.at(0) == '[') {
       std::string sub_str = buffer_container.substr(1,(sq_bracket-1));
       buffer_container.erase(0,sq_bracket+1);
@@ -106,7 +104,7 @@ vector <int> vector_compiler(string str) {
     vS >> value;
     vec.push_back(value);
     vector <int> rest_vec;
-    est_vec = vector_compiler(rest_str);
+    rest_vec = vector_compiler(rest_str);
     vec.insert(vec.end(), rest_vec.begin(), rest_vec.end());
   }
 
