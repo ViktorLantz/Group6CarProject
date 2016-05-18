@@ -83,12 +83,10 @@ namespace automotive {
             	    }
             	}
 
-                if(sideSensorValueF > 50){      // Adds to counter when the vehicle detects a gap on the side      
-                    sideSensorGapCounterF++;
-                }
-
-                if(sideSensorValueB > 50){      // -- || --
-                    sideSensorGapCounterB++;
+                if(parkingSpotFound == false){
+                    if(sideSensorValueB > 50){      // -- || --
+                        sideSensorGapCounterB++;
+                    }
                 }
                 
                 if(parkingSpotFound == false){ 
