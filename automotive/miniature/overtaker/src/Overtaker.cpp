@@ -1,223 +1,310 @@
-/**
- * overtaker - Sample application for overtaking obstacles.
- * Copyright (C) 2012 - 2015 Christian Berger
- *
- * This program is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License
- * as published by the Free Software Foundation; either version 2
- * of the License, or (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
- */
+  /**
+   * overtaker - Sample application for overtaking obstacles.
+   * Copyright (C) 2012 - 2015 Christian Berger
+   *
+   * This program is free software; you can redistribute it and/or
+   * modify it under the terms of the GNU General Public License
+   * as published by the Free Software Foundation; either version 2
+   * of the License, or (at your option) any later version.
+   *
+   * This program is distributed in the hope that it will be useful,
+   * but WITHOUT ANY WARRANTY; without even the implied warranty of
+   * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   * GNU General Public License for more details.
+   *
+   * You should have received a copy of the GNU General Public License
+   * along with this program; if not, write to the Free Software
+   * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+   *
+   *
+   *
+   * This is what the code looked like when we showcased it with the motor running
+   * with counters, using only the US FRONT CENTER to detect the obstacle.
+   * Within the code are many printouts for testing purposes. There are also commented out
+   * lines of code that we were using to test with the sensors. Unfortunately that did not work
+   * and we have been back and forth with the values and the sensors to use and the values that 
+   * are there did work at some point but not at the day of showcasing the overtaker part.
+   */
 
-#include <cstdio>
-#include <cmath>
+  #include <cstdio>
+  #include <cmath>
+  #include <iostream>
+  #include "opendavinci/odcore/io/conference/ContainerConference.h"
+  #include "opendavinci/odcore/data/Container.h"
 
-#include "opendavinci/odcore/io/conference/ContainerConference.h"
-#include "opendavinci/odcore/data/Container.h"
+  #include "opendavinci/GeneratedHeaders_OpenDaVINCI.h"
+  #include "automotivedata/GeneratedHeaders_AutomotiveData.h"
 
-#include "opendavinci/GeneratedHeaders_OpenDaVINCI.h"
-#include "automotivedata/GeneratedHeaders_AutomotiveData.h"
+  #include "Overtaker.h"
 
-#include "Overtaker.h"
 
-namespace automotive {
+   namespace automotive {
     namespace miniature {
 
-        using namespace std;
-        using namespace odcore::base;
-        using namespace odcore::data;
-        using namespace automotive;
-        using namespace automotive::miniature;
+      using namespace std;
+      using namespace odcore::base;
+      using namespace odcore::data;
+      using namespace automotive;
+      using namespace automotive::miniature;
 
-        Overtaker::Overtaker(const int32_t &argc, char **argv) :
-            TimeTriggeredConferenceClientModule(argc, argv, "overtaker") {
+      Overtaker::Overtaker(const int32_t &argc, char **argv) :
+      TimeTriggeredConferenceClientModule(argc, argv, "overtaker")
+      {}
+
+      Overtaker::~Overtaker() {}
+
+      void Overtaker::setUp() {
+              // This method will be call automatically _before_ running body().
+      }
+
+      void Overtaker::tearDown() {
+        VehicleControl vc;
+
+              // This method will be call automatically _after_ return from body().
+        for(int i = 0; i<200; i++){
+          vc.setSpeed(0);
+
+          Container c(vc);
+                  // Send container.
+          getConference().send(c);
         }
 
-        Overtaker::~Overtaker() {}
+      }
 
-        void Overtaker::setUp() {
-            // This method will be call automatically _before_ running body().
-        }
+          // This method will do the main data processing job.
+      odcore::data::dmcp::ModuleExitCodeMessage::ModuleExitCode Overtaker::body() {
 
-        void Overtaker::tearDown() {
-            // This method will be call automatically _after_ return from body().
-        }
 
-        // This method will do the main data processing job.
-        odcore::data::dmcp::ModuleExitCodeMessage::ModuleExitCode Overtaker::body() {
-            const int32_t ULTRASONIC_FRONT_CENTER = 3;
-            const int32_t ULTRASONIC_FRONT_RIGHT = 4;
-            const int32_t INFRARED_FRONT_RIGHT = 0;
-            const int32_t INFRARED_REAR_RIGHT = 2;
+              // FOR THE CAR
+        const int32_t ULTRASONIC_FRONT_CENTER = 4;
+        // const int32_t ULTRASONIC_FRONT_RIGHT = 3;
+        const int32_t INFRARED_FRONT_RIGHT = 2;
+        const int32_t INFRARED_REAR_RIGHT = 0; 
 
-            const double OVERTAKING_DISTANCE = 5.5;
-            const double HEADING_PARALLEL = 0.04;
+              //FOR THE SIMULATOR
+        //  const int32_t ULTRASONIC_FRONT_CENTER = 3;
+        //  const int32_t ULTRASONIC_FRONT_RIGHT = 4;
+        //  const int32_t INFRARED_FRONT_RIGHT = 0;
+        //  const int32_t INFRARED_REAR_RIGHT = 2;
 
-            // Overall state machines for moving and measuring.
-            enum StateMachineMoving { FORWARD, TO_LEFT_LANE_LEFT_TURN, TO_LEFT_LANE_RIGHT_TURN, CONTINUE_ON_LEFT_LANE, TO_RIGHT_LANE_RIGHT_TURN, TO_RIGHT_LANE_LEFT_TURN };
-            enum StateMachineMeasuring { DISABLE, FIND_OBJECT_INIT, FIND_OBJECT, FIND_OBJECT_PLAUSIBLE, HAVE_BOTH_IR, HAVE_BOTH_IR_SAME_DISTANCE, END_OF_OBJECT };
+       int m_state = m_startingStage; // setting the initial state 
 
-            StateMachineMoving stageMoving = FORWARD;
-            StateMachineMeasuring stageMeasuring = FIND_OBJECT_INIT;
+        // COUNTERS USED FOR HARDCODED OVERTAKE
+        
+        int turnLeftFromRightLaneCounter = 0;
+        int turnRightOnLeftLaneCounter = 0;
+        int straightCounter = 0;
+        int backToRightLaneCounter = 0;
+        int leftOnRightLaneCounter = 0;
+        int startingcounter = 0;
+        // int backsensorcounter = 0;
+        // int irdistanceOld = 0;
+        // int irdistance = 0;
 
-            // State counter for dynamically moving back to right lane.
-            int32_t stageToRightLaneRightTurn = 0;
-            int32_t stageToRightLaneLeftTurn = 0;
 
-            // Distance variables to ensure we are overtaking only stationary or slowly driving obstacles.
-            double distanceToObstacle = 0;
-            double distanceToObstacleOld = 0;
 
-            while (getModuleStateAndWaitForRemainingTimeInTimeslice() == odcore::data::dmcp::ModuleStateMessage::RUNNING) {
-	            // 1. Get most recent vehicle data:
-	            Container containerVehicleData = getKeyValueDataStore().get(VehicleData::ID());
-	            VehicleData vd = containerVehicleData.getData<VehicleData> ();
+        while (getModuleStateAndWaitForRemainingTimeInTimeslice() == odcore::data::dmcp::ModuleStateMessage::RUNNING) {
+                  
+                  // 1. Get most recent vehicle data:
+          Container containerVehicleData = getKeyValueDataStore().get(VehicleData::ID());
+          VehicleData vd = containerVehicleData.getData<VehicleData> ();
 
-                // 2. Get most recent sensor board data:
-                Container containerSensorBoardData = getKeyValueDataStore().get(automotive::miniature::SensorBoardData::ID());
-                SensorBoardData sbd = containerSensorBoardData.getData<SensorBoardData> ();
+                  // 2. Get most recent sensor board data:
+          Container containerSensorBoardData = getKeyValueDataStore().get(automotive::miniature::SensorBoardData::ID());
+          SensorBoardData sbd = containerSensorBoardData.getData<SensorBoardData> ();
 
-                // Create vehicle control data.
-                VehicleControl vc;
+                  // 3. Get the most recent steering data:
+          Container containerSteeringData = getKeyValueDataStore().get(automotive::miniature::SteeringData::ID());
+          SteeringData sd = containerSteeringData.getData<SteeringData> ();
 
-                // Moving state machine.
-                if (stageMoving == FORWARD) {
-                    // Go forward.
-                    vc.setSpeed(2);
-                    vc.setSteeringWheelAngle(0);
+          // GETTING THE VALUES FOR THE SENSORS
+          //  int usright = sbd.getValueForKey_MapOfDistances(ULTRASONIC_FRONT_RIGHT);
+          int uscenter = sbd.getValueForKey_MapOfDistances(ULTRASONIC_FRONT_CENTER);
+          int irfront = sbd.getValueForKey_MapOfDistances(INFRARED_FRONT_RIGHT);
+          int irback = sbd.getValueForKey_MapOfDistances(INFRARED_REAR_RIGHT);
+          
+          //  int angle; // Variable to use with lanefollowing
 
-                    stageToRightLaneLeftTurn = 0;
-                    stageToRightLaneRightTurn = 0;
+          //  const double irfrontleftlane = sbd.getValueForKey_MapOfDistances(INFRARED_FRONT_RIGHT);
+          //  const double irbackleftlane = sbd.getValueForKey_MapOfDistances(INFRARED_REAR_RIGHT);
+          
+          // Create vehicle control data.
+          VehicleControl vc;
+
+          
+          vc.setSpeed(1);
+          //cout << "USFRONT :" << uscenter << endl;
+          // cout << "USRIGHT :" << usright << endl;
+          // cout << "IRFRONT :" << irfront << endl;
+          // cout << "IRBACK :" << irback << endl;
+          // cout << "IRFRONT in FOLLOWLANE:" << irfront << endl;
+          // cout << "IRBACK in FOLLOWLANE:" << irback << endl;
+          if(uscenter){
+                
+            switch(m_state)
+            {
+              case m_startingStage :
+              // THE STARTING STATE WHERE THE CAR DRIVES STRAIGHT UNTIL THE US FRONT DETECTS AN OBSTACLE
+              // cout << "*******In STARTING stage*******" << endl;
+              // cout << "IRFRONT in STARTING :" << irfront << endl;
+              // cout << "IRBACK in STARTING :" << irback << endl;
+              // cout << "USFRONT in STARTING :" << uscenter << endl;
+              
+              //IF USING THE LANEDETECTOR
+
+              // angle = sd.getExampleData();
+              // vc.setSteeringWheelAngle(angle);
+
+              vc.setSteeringWheelAngle(5);
+              if((uscenter < 55) && (uscenter > 20)){
+                startingcounter++;
+                m_state = m_moveToLeftLane;
+              }
+                      
+                //This if statement was to get three values within our range to prevent 
+                //the car to turn on noice values. 
+
+              // if(startingcounter == 3){
+              //     m_state = m_moveToLeftLane;
+              // }
+
+              break;
+              case m_moveToLeftLane :
+              // TURNING LEFT OVER TO THE LEFT LANE
+            
+              turnLeftFromRightLaneCounter++;
+              // cout << "IRFRONT in FOLLOWLANE:" << irfront << endl;
+              // cout << "IRBACK in FOLLOWLANE:" << irback << endl;
+              // cout << "turnLeftFromRightLaneCounter :" <<turnLeftFromRightLaneCounter << endl;
+              // cout << "*****In MOVETOLEFTLANE stage******" << endl;
+              // cout << "IRFRONT :" << irfront << endl;
+              // cout << "IRBACK :" << irback << endl;
+              // cout << "*****USCENTER :" << uscenter << endl;
+                
+              vc.setSteeringWheelAngle(-1);
+
+              turnLeftFromRightLaneCounter++;
+
+              // IF USING IR FRONT SENSOR
+              // if ((irfront > 0) && (irfront < 20) && (irback < 20) && (irback > 0)) {
+
+              // if ((irfront > 0) && (irfront < 30) && (irback > 0)) {
+              // m_state = m_turnCarOnLeftLane;
+              // }
+
+              if(turnLeftFromRightLaneCounter == 60){
+                //   vc.setSpeed(0);
+                //   vc.setSteeringWheelAngle(25);
+                m_state = m_turnCarOnLeftLane;
+              }
+
+              break;
+
+              case m_turnCarOnLeftLane :
+              // TURNING RIGHT ON LEFT LANE 
+
+              // cout << "******In TURNCARONLEFTLANE stage******" << endl;
+              // cout << "IRFRONT :" << irfrontleftlane << endl;
+              // cout << "IRBACK :" << irbackleftlane << endl;
+              vc.setSteeringWheelAngle(1);
+                           
+              turnRightOnLeftLaneCounter++;
+              //  cout << "turnRightOnLeftLaneCounter :"<< turnRightOnLeftLaneCounter << endl;
+
+              //IF USING THE INFRARED TO STRAIGHTEN THE CAR
+              // if(fabs(irfrontleftlane - irbackleftlane) < 1){
+              //     m_state= m_straighten;
+              // }
+
+              //USING A COUNTER
+              if(turnRightOnLeftLaneCounter == 24){ // || (turnRightOnLeftLaneCounter == 17)){            
+                m_state = m_straighten;
                 }
-                else if (stageMoving == TO_LEFT_LANE_LEFT_TURN) {
-                    // Move to the left lane: Turn left part until both IRs see something.
-                    vc.setSpeed(1);
-                    vc.setSteeringWheelAngle(-25);
+              break;
+                              
+              case m_straighten :
+              // DRIVING PAST THE OBSTACLE
+              vc.setSteeringWheelAngle(5);
+              straightCounter++;    
 
-                    // State machine measuring: Both IRs need to see something before leaving this moving state.
-                    stageMeasuring = HAVE_BOTH_IR;
+              //IF USING LANEDETECTOR
+              // angle = sd.getExampleData();
+              // vc.setSteeringWheelAngle(angle);
+              
+              // cout << "******In STRAIGHTEN stage******" << endl;
+              // cout << "IRFRONT :" << irfront << endl;
+              // cout << "IRBACK :" << irback << endl;
+              // cout << "USRIGHT in STRAIGHTEN :" << usright << endl;
+              // cout << "straightCounter :" << straightCounter << endl;
+                              
+              //IF USING THE INFRARED FRONT SENSOR
+              // if ( irfront < 0)  {
+              // m_state = m_turnBackToRightLane;
+              // }
 
-                    stageToRightLaneRightTurn++;
+              //IF USING THE COUNTER AND THE US RIGHT SENSOR
+              //if(((straightCounter > 20) && (usright < 0)) || ((straightCounter > 20)&&(usright > 80))){
+              if((straightCounter > 25) && (irback < 0)) {
+              // cout << "FRONT RIGHT :" << irfront << endl;
+              // cout << "REAR RIGHT :" << irback << endl;
+              // cout << "US RIGHT :" << usright << endl;
+              m_state = m_turnBackToRightLane;
+              }
+              break;
+                          
+              case m_turnBackToRightLane :
+                // TURNING BACK TO RIGHT LANE
+                // cout << "*****In TURN BACK stage*****" << endl;
+                // cout << "IRFRONT :" << irfront << endl;
+                // cout << "IRBACK :" << irback << endl;
+
+                vc.setSteeringWheelAngle(1);
+                backToRightLaneCounter++;
+                // cout << "backToRightLaneCounter :" << backToRightLaneCounter << endl;
+
+                //if using the infrared back right sensor
+                // if  (irback < 0){
+                //   backsensorcounter++;
+                // }
+
+                //IF USING THE COUNTER FROM TURNING LEFT
+               /* turnLeftFromRightLaneCounter--;
+                if{(turnLeftFromRightLaneCounter == 0){
+                  m_state = m_returnNormal;
+                }*/
+
+                if(backToRightLaneCounter == 70) {
+                  m_state = m_returnNormal;
+                  }
+                break;
+
+                case m_returnNormal :
+                // ADJUSTING THE CAR A LITTLE BIT BEFORE THE LANEDETECTOR TAKES OVER
+                // cout << "*****In RETURN NORMAL stage******" << endl;
+                // cout << "IRFRONT in RETURN :" << irfront << endl;
+                // cout << "IRBACK in RETURN:" << irback << endl;
+
+                leftOnRightLaneCounter++;
+                vc.setSteeringWheelAngle(-1);
+                // cout << "leftOnRightLaneCounter :" << leftOnRightLaneCounter << endl;
+                if(leftOnRightLaneCounter == 60){
+                  m_state = m_startingStage;
+                  // vc.setSteeringWheelAngle(angle);
+                  // vc.setSteeringWheelAngle(sd.getExampleData()); //iswiching back to lanedetector
+                  }
+                break;
                 }
-                else if (stageMoving == TO_LEFT_LANE_RIGHT_TURN) {
-                    // Move to the left lane: Turn right part until both IRs have the same distance to obstacle.
-                    vc.setSpeed(1);
-                    vc.setSteeringWheelAngle(25);
+              }
 
-                    // State machine measuring: Both IRs need to have the same distance before leaving this moving state.
-                    stageMeasuring = HAVE_BOTH_IR_SAME_DISTANCE;
+                  // Create container for finally sending the data.
+                        Container c(vc);
+                  // Send container.
+                        getConference().send(c);
+                      }
 
-                    stageToRightLaneLeftTurn++;
-                }
-                else if (stageMoving == CONTINUE_ON_LEFT_LANE) {
-                    // Move to the left lane: Passing stage.
-                    vc.setSpeed(2);
-                    vc.setSteeringWheelAngle(0);
-
-                    // Find end of object.
-                    stageMeasuring = END_OF_OBJECT;
-                }
-                else if (stageMoving == TO_RIGHT_LANE_RIGHT_TURN) {
-                    // Move to the right lane: Turn right part.
-                    vc.setSpeed(1.5);
-                    vc.setSteeringWheelAngle(25);
-
-                    stageToRightLaneRightTurn--;
-                    if (stageToRightLaneRightTurn == 0) {
-                        stageMoving = TO_RIGHT_LANE_LEFT_TURN;
+                      return odcore::data::dmcp::ModuleExitCodeMessage::OKAY;
                     }
-                }
-                else if (stageMoving == TO_RIGHT_LANE_LEFT_TURN) {
-                    // Move to the left lane: Turn left part.
-                    vc.setSpeed(.9);
-                    vc.setSteeringWheelAngle(-25);
 
-                    stageToRightLaneLeftTurn--;
-                    if (stageToRightLaneLeftTurn == 0) {
-                        // Start over.
-                        stageMoving = FORWARD;
-                        stageMeasuring = FIND_OBJECT_INIT;
-
-                        distanceToObstacle = 0;
-                        distanceToObstacleOld = 0;
-                    }
-                }
-
-                // Measuring state machine.
-                if (stageMeasuring == FIND_OBJECT_INIT) {
-                    distanceToObstacleOld = sbd.getValueForKey_MapOfDistances(ULTRASONIC_FRONT_CENTER);
-                    stageMeasuring = FIND_OBJECT;
-                }
-                else if (stageMeasuring == FIND_OBJECT) {
-                    distanceToObstacle = sbd.getValueForKey_MapOfDistances(ULTRASONIC_FRONT_CENTER);
-
-                    // Approaching an obstacle (stationary or driving slower than us).
-                    if ( (distanceToObstacle > 0) && (((distanceToObstacleOld - distanceToObstacle) > 0) || (fabs(distanceToObstacleOld - distanceToObstacle) < 1e-2)) ) {
-                        // Check if overtaking shall be started.
-                        stageMeasuring = FIND_OBJECT_PLAUSIBLE;
-                    }
-
-                    distanceToObstacleOld = distanceToObstacle;
-                }
-                else if (stageMeasuring == FIND_OBJECT_PLAUSIBLE) {
-                    if (sbd.getValueForKey_MapOfDistances(ULTRASONIC_FRONT_CENTER) < OVERTAKING_DISTANCE) {
-                        stageMoving = TO_LEFT_LANE_LEFT_TURN;
-
-                        // Disable measuring until requested from moving state machine again.
-                        stageMeasuring = DISABLE;
-                    }
-                    else {
-                        stageMeasuring = FIND_OBJECT;
-                    }
-                }
-                else if (stageMeasuring == HAVE_BOTH_IR) {
-                    // Remain in this stage until both IRs see something.
-                    if ( (sbd.getValueForKey_MapOfDistances(INFRARED_FRONT_RIGHT) > 0) && (sbd.getValueForKey_MapOfDistances(INFRARED_REAR_RIGHT) > 0) ) {
-                        // Turn to right.
-                        stageMoving = TO_LEFT_LANE_RIGHT_TURN;
-                    }
-                }
-                else if (stageMeasuring == HAVE_BOTH_IR_SAME_DISTANCE) {
-                    // Remain in this stage until both IRs have the similar distance to obstacle (i.e. turn car)
-                    // and the driven parts of the turn are plausible.
-                    const double IR_FR = sbd.getValueForKey_MapOfDistances(INFRARED_FRONT_RIGHT);
-                    const double IR_RR = sbd.getValueForKey_MapOfDistances(INFRARED_REAR_RIGHT);
-
-                    if ((fabs(IR_FR - IR_RR) < HEADING_PARALLEL) && ((stageToRightLaneLeftTurn - stageToRightLaneRightTurn) > 0)) {
-                        // Straight forward again.
-                        stageMoving = CONTINUE_ON_LEFT_LANE;
-                    }
-                }
-                else if (stageMeasuring == END_OF_OBJECT) {
-                    // Find end of object.
-                    distanceToObstacle = sbd.getValueForKey_MapOfDistances(ULTRASONIC_FRONT_RIGHT);
-
-                    if (distanceToObstacle < 0) {
-                        // Move to right lane again.
-                        stageMoving = TO_RIGHT_LANE_RIGHT_TURN;
-
-                        // Disable measuring until requested from moving state machine again.
-                        stageMeasuring = DISABLE;
-                    }
-                }
-
-                // Create container for finally sending the data.
-                Container c(vc);
-                // Send container.
-                getConference().send(c);
-            }
-
-            return odcore::data::dmcp::ModuleExitCodeMessage::OKAY;
-        }
-
-    }
-} // automotive::miniature
+                  }
+  } // automotive::miniature
 
