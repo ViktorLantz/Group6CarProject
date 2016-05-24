@@ -68,6 +68,13 @@ namespace automotive {
                 virtual void setUp();
 
                 virtual void tearDown();
+                //GIVING THE STATES INTEGER VALUES
+                static const int m_startingStage = 1;
+                static const int m_moveToLeftLane = 2;
+                static const int m_turnCarOnLeftLane = 3;
+                static const int m_straighten = 4;
+                static const int m_turnBackToRightLane = 5;
+                static const int m_returnNormal = 6;
         };
 
     }
