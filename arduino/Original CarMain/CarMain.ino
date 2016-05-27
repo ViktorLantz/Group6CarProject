@@ -168,7 +168,7 @@ void loop() {
     //Serial.println(convertedIRBack);
 
     outputString = us + frontSensorReading + ',' + frontRightSensorReading + ']' + ir + convertedIRFrontRight + ',' + convertedIRBack + ',' + convertedIRBackRight + ']';
-    Serial.print(outputString);
+    //Serial.print(outputString);
 
     // ch1 = servo, ch2 = motor
     ch1 = pulseIn(3, HIGH);
@@ -178,9 +178,12 @@ void loop() {
     Wire.requestFrom(8, 2);
     int wireArray[2];
     if(Wire.available()) {
+      for(int i = 0; i < 2; i++){
+        wireArray[i] = Wire.read();  
+      }  
      }
 
-    //Serial.println(velocity);   
+    Serial.println(velocity);   
 
     myServo.writeMicroseconds(1105);
     myMotor.writeMicroseconds(1500);
@@ -249,11 +252,9 @@ void loop() {
     // Out the actual value from the sensors.
     
     int frontSensorReading = USFront.getRange(unit);
-    //Serial.print(frontSensorReading);
     int frontRightSensorReading = USFrontRight.getRange(unit);
-    //Serial.print(frontRightSensorReading);
 
-    // IR sensor values. Low == close && less than ~8 is too close to the sensors so it bugsout.
+    // IR sensor values. Low == close.
     IRFrontRight = analogRead(IRSensorFrontRight);
     convertedIRFrontRight = IRConversion(IRFrontRight);
    
@@ -266,86 +267,50 @@ void loop() {
 
     Wire.requestFrom(8, 1);
     if(Wire.available()) {
- 
       velocity = Wire.read(); 
      }  
 
     outputString = us + frontSensorReading + ',' + frontRightSensorReading + ']' + ir + convertedIRFrontRight + ',' + convertedIRBack + ',' + convertedIRBackRight + ']';
     Serial.print(outputString);
-    //Serial.println(velocity);
 
     //myMotor.writeMicroseconds(1500);
     //myServo.writeMicroseconds(1105);
 
-    // If input == D, turn right --700? Very sharp
-    // -- 800 relatively sharp
-    if (steeringVal > 0) {
+    // Turn right --700
+    if (steeringVal == 1) {
       myServo.writeMicroseconds(775);
-      /*strip.setPixelColor(0,  204, 102, 0);
-      strip.setPixelColor(1,  204, 102, 0);
-      strip.setPixelColor(14,  204, 102, 0)
-      strip.setPixelColor(15,  204, 102, 0);
-      strip.show();
-      delay(50);
-      strip.setPixelColor(0,  0, 0, 0);
-      strip.setPixelColor(1,  0, 0, 0);
-      strip.setPixelColor(14,  0, 0, 0);
-      strip.setPixelColor(15,  0, 0, 0);
-      strip.show();*/
     }
-    // If input == A, turn left --1510?
-    // -- 1450
-    else if (steeringVal < 0) {
+    // Turn left --1510
+    if (steeringVal == -1) {
       myServo.writeMicroseconds(1425);
-      /*strip.setPixelColor(6,  204, 102, 0);
-      strip.setPixelColor(7,  204, 102, 0);
-      strip.setPixelColor(8,  204, 102, 0);
-      strip.setPixelColor(9,  204, 102, 0);
-      strip.show();
-      delay(50);
-      strip.setPixelColor(6,  0, 0, 0);
-      strip.setPixelColor(7,  0, 0, 0);
-      strip.setPixelColor(8,  0, 0, 0);
-      strip.setPixelColor(9,  0, 0, 0);
-      strip.show();*/
     }
-    if(steeringVal == 0){
-      steeringCounter++;
-      if(steeringCounter >= 5){
-        myServo.writeMicroseconds(1105);
-        steeringCounter = 0;
-      }
+    if (steeringVal == 5){
+      myServo.writeMicroseconds(1105);
     }
-      
-    
-   
-    // If speedval is higher than 0, drive forward
+
+    // If speedval is higher than 0, drive forward, check the velocity from the encoder.
     if (speedVal == 1) {
       if(velocity >= 2){
         myMotor.writeMicroseconds(1557);
       }
       if(velocity < 2){
-        myMotor.writeMicroseconds(1567);
+        myMotor.writeMicroseconds(1565);
       }
     }
-      if(speedVal == 0){
-        myMotor.writeMicroseconds(1500);
-      }
+    
       if (speedVal == 2) {
         myMotor.writeMicroseconds(1200);
         myMotor.writeMicroseconds(1500);
       }
-      if (speedVal == 3) {
-        myMotor.writeMicroseconds(1555);
+      
+      if(speedVal == 4){
         myMotor.writeMicroseconds(1500);
       }
     
-    
-    // If speedval is lower than 0, drive backwards
-    if (speedVal < 0) {
+    // If speedval is lower than 0, drive backwards, check velocity if boost or not
+    if (speedVal == -1) {
       if(velocity > 2){
-        myMotor.writeMicroseconds(1250);
-        
+        myMotor.writeMicroseconds(1250);   
       }else{
         myMotor.writeMicroseconds(1200);
       }
@@ -398,6 +363,5 @@ int IRConversion(int value){
     convertedValue = (2914/value+5)-1;
     return convertedValue;    
 }
-
 
 
